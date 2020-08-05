@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-fonts:'Lora', serif;
+$secondary-font:'Montserrat', sans-serif;
+$playfair-font: "Playfair Display";
+$colorBlack: black !important;
+$colorRed: #f34f3f;
+$fontSize: 19px;
+
+.fontColor{
+    color: $colorBlack;
+}
+
+.primaryFamily{
+    font-family: $secondary-font;
+}
+.underLine{
+    border-bottom: 1px solid $colorBlack;
+}
+
+.logo{
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    a{
+        img{
+            height: 25px;
+        }
+    }
+}
+
+.navbar-nav{
+    .nav-item{
+        padding-left: 50px;
+        padding-top: 25px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        .nav-link{
+            padding: 0;
+            i{
+                font-size: $fontSize;
+                
+            }
+        }
+    }
+}
+
+.fa-shopping-bag{
+    position: relative;
+    sup{
+        position: absolute;
+        top: 0px;
+        right: -7px;
+        background-color: $colorRed;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+}
+
