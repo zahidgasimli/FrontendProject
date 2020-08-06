@@ -9,6 +9,10 @@
   color: black !important;
 }
 
+.fontColorRed {
+  color: #f34f3f !important;
+}
+
 .primaryFamily {
   font-family: "Montserrat", sans-serif;
 }
@@ -21,15 +25,22 @@
   width: 250px;
   height: 25px;
   text-align: center;
+  position: relative;
+  top: 14px;
+  left: 87px;
 }
 
 .logo a img {
   height: 25px;
 }
 
+.navbar-nav {
+  margin-left: 70px;
+}
+
 .navbar-nav .nav-item {
   padding-left: 50px;
-  padding-top: 25px;
+  padding-top: 50px;
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -40,6 +51,7 @@
 
 .navbar-nav .nav-item .nav-link i {
   font-size: 19px;
+  margin-right: 20px;
 }
 
 .fa-shopping-bag {
@@ -50,10 +62,278 @@
   position: absolute;
   top: 0px;
   right: -7px;
-  background-color: #f34f3f;
+  background-color: #f34f3f !important;
   color: white;
   padding: 5px;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.homeList {
+  width: 200px;
+  height: 240px;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  top: 130px;
+  left: 750px;
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.homeList ul {
+  list-style: none;
+}
+
+.homeList ul li a {
+  color: #737373;
+}
+
+.homeList ul li a:hover {
+  text-decoration: none;
+}
+
+.categories {
+  width: 70%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.categories .categoriesList ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-top: 70px;
+}
+
+.categories .categoriesList ul li {
+  margin-right: 32px;
+  letter-spacing: 1px;
+}
+
+.categories .categoriesList ul li a {
+  text-decoration: none;
+  color: black !important;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.categories .categoriesList ul li a:hover {
+  color: #f34f3f !important;
+}
+
+.filter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 70px 0 0;
+  cursor: pointer;
+}
+
+.filter .filter-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 34px;
+  right: 15px;
+  background-color: white;
+  z-index: 666;
+  width: 410px;
+}
+
+.filter .filter-content .filter-text {
+  margin-right: 15px;
+}
+
+.filter .filter-content .sort-by {
+  padding-left: 40px;
+}
+
+.filter .filter-content .sort-by h5 {
+  font-size: 25px;
+  line-height: 2;
+}
+
+.filter .filter-content .sort-by ul {
+  list-style: none;
+}
+
+.filter .filter-content .sort-by ul li {
+  line-height: 2;
+}
+
+.filter .filter-content .sort-by ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.filter .filter-content .sort-by ul li a:hover {
+  color: black !important;
+}
+
+.filter .filter-content .price-range {
+  padding: 0px 40px 25px 40px;
+}
+
+.filter .filter-content .price-range h5 {
+  font-size: 25px;
+  line-height: 2;
+}
+
+.filter .filter-content .price-range ul {
+  list-style: none;
+}
+
+.filter .filter-content .price-range ul li {
+  line-height: 2;
+}
+
+.filter .filter-content .price-range ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #737373;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.filter .filter-content .price-range ul li a:hover {
+  color: black !important;
+}
+
+.filter:hover .filter-content {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.filterCard {
+  text-align: center;
+  border: none;
+  padding-bottom: 75px;
+}
+
+.filterCard .cardImg {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.filterCard .cardImg .sold {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 15px;
+  left: 15px;
+  z-index: 666;
+}
+
+.filterCard .cardImg .sold:hover {
+  cursor: auto;
+}
+
+.filterCard .cardImg .sale {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 666;
+  font-family: "Playfair Display";
+  color: #2b2b2b;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 4px 15px;
+}
+
+.filterCard .cardImg .sale:hover {
+  cursor: auto;
+}
+
+.filterCard .card-img-top {
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.filterCard .card-img-top:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.filterCard .card-body {
+  font-size: 13px;
+}
+
+.filterCard .card-body .card-text {
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.filterCard .card-body .card-price {
+  color: #afafaf;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.filterCard .card-body .card-price:hover {
+  cursor: pointer;
+}
+
+.filterCard .card-body .card-price span {
+  color: black !important;
+  margin-left: 5px;
+  font-weight: 300;
+}
+
+#valentine {
+  background-color: #f7f7f7;
+}
+
+#valentine .valentine {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+#valentine .valentine .valentineVideo .valentineImg {
+  overflow: hidden;
+}
+
+#valentine .valentine .valentineVideo .valentineImg img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#valentine .valentine .valentineVideo .valentineImg img:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 /*# sourceMappingURL=style.css.map */

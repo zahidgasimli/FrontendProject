@@ -8,11 +8,17 @@ $primary-fonts:'Lora', serif;
 $secondary-font:'Montserrat', sans-serif;
 $playfair-font: "Playfair Display";
 $colorBlack: black !important;
-$colorRed: #f34f3f;
+$colorRed: #f34f3f !important;
+$colorHover: #737373;
+$colorGrey: #afafaf;
 $fontSize: 19px;
 
 .fontColor{
     color: $colorBlack;
+}
+
+.fontColorRed{
+    color: $colorRed;
 }
 
 .primaryFamily{
@@ -26,7 +32,11 @@ $fontSize: 19px;
     width: 250px;
     height: 25px;
     text-align: center;
+    position: relative;
+    top: 14px;
+    left: 87px;
     a{
+        
         img{
             height: 25px;
         }
@@ -34,15 +44,17 @@ $fontSize: 19px;
 }
 
 .navbar-nav{
+    margin-left: 70px;
     .nav-item{
         padding-left: 50px;
-        padding-top: 25px;
+        padding-top: 50px;
         font-size: 12px;
         letter-spacing: 2px;
         .nav-link{
             padding: 0;
             i{
                 font-size: $fontSize;
+                margin-right: 20px;
                 
             }
         }
@@ -62,4 +74,237 @@ $fontSize: 19px;
         font-weight: bold;
     }
 }
+
+.homeList{
+    // background-color: yellow;
+    width: 200px;
+    height: 240px;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: 750px;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: $secondary-font;
+    ul{
+        list-style: none;
+        li{
+            a{
+                color: $colorHover;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.categories{
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    .categoriesList{
+        ul{
+            list-style: none;
+            display: flex;
+            font-family: $secondary-font;
+            font-size: 12px;
+            margin-top: 70px;
+            li{
+                // padding: 70px 25px 15px 0px;
+                margin-right: 32px;
+                letter-spacing: 1px;
+                a{
+                    text-decoration: none;
+                    color: $colorBlack;
+                    transition: .5s;
+                    &:hover{
+                        color: $colorRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.filter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    // text-align: end;
+    display: flex;
+    // flex-direction: row-reverse;
+    justify-content: flex-end;
+    // float: right;
+    font-family: $secondary-font;
+    font-size: 12px;
+    letter-spacing: 1px;
+    // padding-top: 70px;
+    margin: 70px 0 0;
+    cursor: pointer;
+    // margin: 69px 0 0;
+    .filter-content{
+        display: flex;
+        position: absolute; 
+        top: 34px;
+        right: 15px;
+        background-color: white;
+        z-index: 666;
+        width: 410px;
+        // padding: 50px;
+        .filter-text{
+            margin-right: 15px;
+        }
+        .sort-by{
+            padding-left: 40px;
+            h5{
+                font-size: 25px;
+                line-height: 2;
+            }
+            // font-family: $playfair-font;
+            ul{
+                list-style: none;
+                li{
+                    line-height: 2;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: $colorHover;
+                        transition: .5s;
+                        &:hover{
+                            color: $colorBlack;
+                        }
+                    }
+                }
+            }
+        }
+        .price-range{
+            // padding-right: 62px;
+            // padding-left: 50px;
+                // padding-left: 40px;
+                padding: 0px 40px 25px 40px;
+            h5{
+                font-size: 25px;
+                line-height: 2;
+            }
+            // font-family: $playfair-font;
+            ul{
+                list-style: none;
+                li{
+                    line-height: 2;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: $colorHover;
+                        transition: .5s;
+                        &:hover{
+                            color: $colorBlack;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &:hover .filter-content{
+        display: flex !important;
+    }
+}
+
+.filterCard{
+    text-align: center;
+    border: none;
+    padding-bottom: 75px;
+    .cardImg{
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        .sold{
+            position: absolute;
+            // height: 30px;
+            padding: 4px 13px;
+            background-color: #2b2b2b;
+            color: #fff;
+            font-family: $playfair-font;
+            font-size: 16px;
+            letter-spacing: 1px;
+            top: 15px;
+            left: 15px;
+            z-index: 666;
+            &:hover{
+                cursor: auto;
+            }
+        }
+        .sale{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 666;
+            font-family: $playfair-font;
+            color: #2b2b2b;
+            background-color: #fff;
+            font-size: 16px;
+            letter-spacing: 1px;
+            padding: 4px 15px;
+            &:hover{
+                cursor: auto;
+            }
+        }
+    }
+    .card-img-top{
+        transition: .8s;
+        &:hover{
+            transform: scale(1.05);;
+            box-sizing: border-box;
+     }   
+    }
+    .card-body{
+        font-size: 13px;
+        .card-text{
+            letter-spacing: 1px;
+            cursor: pointer;
+            font-family: $secondary-font;
+    }
+        .card-price{
+            color: $colorGrey;
+            transition: .5s;
+            &:hover{
+                // color: $colorRed;
+                cursor: pointer;
+            }
+            span{
+                color: $colorBlack;
+                margin-left: 5px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#valentine{
+    background-color: #f7f7f7;
+    .valentine{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        padding: 0;
+        .valentineVideo{
+            .valentineImg{
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    transition: .5s;
+                    &:hover{
+                        transform: scale(1.07);
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+
 
