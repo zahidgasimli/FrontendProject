@@ -1,81 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-$primary-fonts:'Lora', serif;
-$secondary-font:'Montserrat', sans-serif;
-$playfair-font: "Playfair Display";
-$colorBlack: black !important;
-$colorRed: #f34f3f !important;
-$colorHover: #737373;
-$colorGrey: #afafaf;
-$fontSize: 19px;
-
-.fontColor{
-    color: $colorBlack;
-}
-
-.fontColorRed{
-    color: $colorRed;
-}
-
-.primaryFamily{
+  }
+  
+  $primary-fonts: 'Lora', serif;
+  $secondary-font: 'Montserrat', sans-serif;
+  $playfair-font: 'Playfair Display';
+  $fair-fontSerif: 'playfair display,serif';
+  $colorBlack: black;
+  $colorRed: #f34f3f;
+  $colorHover: #737373;
+  $colorGrey: #afafaf;
+  $fontSize: 19px;
+  
+  // .fontColor{
+  //     color: $colorBlack;
+  // }
+  
+  // .fontColorRed{
+  //     color: $colorRed;
+  // }
+  
+  .primaryFamily {
     font-family: $secondary-font;
-}
-.underLine{
+  }
+  .underLine {
     border-bottom: 1px solid $colorBlack;
-}
-
-.logo{
+  }
+  
+  .logo {
     width: 250px;
     height: 25px;
     text-align: center;
     position: relative;
     top: 14px;
     left: 87px;
-    a{
-        
-        img{
-            height: 25px;
-        }
+    a {
+      img {
+        height: 25px;
+      }
     }
-}
-
-.navbar-nav{
+  }
+  
+  .navbar-nav {
     margin-left: 70px;
-    .nav-item{
-        padding-left: 50px;
-        padding-top: 50px;
-        font-size: 12px;
-        letter-spacing: 2px;
-        .nav-link{
-            padding: 0;
-            i{
-                font-size: $fontSize;
-                margin-right: 20px;
-                
-            }
+    .nav-item {
+      padding-left: 50px;
+      padding-top: 50px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      .nav-link {
+        padding: 0;
+        color: $colorBlack;
+        &:hover {
+          color: $colorBlack;
         }
+        i {
+          font-size: $fontSize;
+          margin-right: 20px;
+        }
+        .fa-shopping-bag {
+          position: relative;
+          sup {
+            position: absolute;
+            top: 0px;
+            right: -7px;
+            background-color: $colorRed;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+          }
+        }
+      }
     }
-}
-
-.fa-shopping-bag{
-    position: relative;
-    sup{
-        position: absolute;
-        top: 0px;
-        right: -7px;
-        background-color: $colorRed;
-        color: white;
-        padding: 5px;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-}
-
-.homeList{
+  }
+  
+  .homeList {
     // background-color: yellow;
     width: 200px;
     height: 240px;
@@ -87,49 +89,51 @@ $fontSize: 19px;
     line-height: 30px;
     font-size: 14px;
     font-family: $secondary-font;
-    ul{
-        list-style: none;
-        li{
-            a{
-                color: $colorHover;
-                &:hover{
-                    text-decoration: none;
-                }
-            }
+    ul {
+      list-style: none;
+      li {
+        a {
+          color: $colorHover;
+          &:hover {
+            text-decoration: none;
+          }
         }
+      }
     }
-}
-
-.categories{
+  }
+  
+  .categories {
     width: 70%;
     margin: auto;
     flex-wrap: wrap;
-    .categoriesList{
-        ul{
-            list-style: none;
-            display: flex;
-            font-family: $secondary-font;
-            font-size: 12px;
-            margin-top: 70px;
-            li{
-                // padding: 70px 25px 15px 0px;
-                margin-right: 32px;
-                letter-spacing: 1px;
-                a{
-                    text-decoration: none;
-                    color: $colorBlack;
-                    transition: .5s;
-                    &:hover{
-                        color: $colorRed;
-                    }
-                }
+    .categoriesList {
+      ul {
+        list-style: none;
+        display: flex;
+        font-family: $secondary-font;
+        font-size: 12px;
+        margin-top: 70px;
+        li {
+          // padding: 70px 25px 15px 0px;
+          margin-right: 32px;
+          letter-spacing: 1px;
+          a {
+            text-decoration: none;
+            color: $colorBlack;
+            transition: 0.5s;
+            &:hover {
+              color: $colorRed;
             }
+          }
         }
+        .activeLi {
+          color: $colorRed;
+        }
+      }
     }
-}
-
-
-.filter{
+  }
+  
+  .filter {
     position: relative;
     width: 100%;
     height: 100%;
@@ -145,166 +149,398 @@ $fontSize: 19px;
     margin: 70px 0 0;
     cursor: pointer;
     // margin: 69px 0 0;
-    .filter-content{
-        display: flex;
-        position: absolute; 
-        top: 34px;
-        right: 15px;
-        background-color: white;
-        z-index: 666;
-        width: 410px;
-        // padding: 50px;
-        .filter-text{
-            margin-right: 15px;
+    .filter-content {
+      display: flex;
+      position: absolute;
+      top: 34px;
+      right: 15px;
+      background-color: white;
+      z-index: 666;
+      width: 410px;
+      // padding: 50px;
+      .filter-text {
+        margin-right: 15px;
+      }
+      .sort-by {
+        padding-left: 40px;
+        h5 {
+          font-size: 25px;
+          line-height: 2;
+          font-family: $fair-fontSerif;
         }
-        .sort-by{
-            padding-left: 40px;
-            h5{
-                font-size: 25px;
-                line-height: 2;
+        // font-family: $playfair-font;
+        ul {
+          list-style: none;
+          li {
+            line-height: 2;
+            a {
+              text-decoration: none;
+              font-size: 13px;
+              color: $colorHover;
+              transition: 0.5s;
+              &:hover {
+                color: $colorBlack;
+              }
             }
-            // font-family: $playfair-font;
-            ul{
-                list-style: none;
-                li{
-                    line-height: 2;
-                    a{
-                        text-decoration: none;
-                        font-size: 13px;
-                        color: $colorHover;
-                        transition: .5s;
-                        &:hover{
-                            color: $colorBlack;
-                        }
-                    }
-                }
-            }
+          }
         }
-        .price-range{
-            // padding-right: 62px;
-            // padding-left: 50px;
-                // padding-left: 40px;
-                padding: 0px 40px 25px 40px;
-            h5{
-                font-size: 25px;
-                line-height: 2;
-            }
-            // font-family: $playfair-font;
-            ul{
-                list-style: none;
-                li{
-                    line-height: 2;
-                    a{
-                        text-decoration: none;
-                        font-size: 13px;
-                        color: $colorHover;
-                        transition: .5s;
-                        &:hover{
-                            color: $colorBlack;
-                        }
-                    }
-                }
-            }
+      }
+      .price-range {
+        // padding-right: 62px;
+        // padding-left: 50px;
+        // padding-left: 40px;
+        padding: 0px 40px 25px 40px;
+        h5 {
+          font-size: 25px;
+          line-height: 2;
+          font-family: $fair-fontSerif;
         }
+        // font-family: $playfair-font;
+        ul {
+          list-style: none;
+          li {
+            line-height: 2;
+            a {
+              text-decoration: none;
+              font-size: 13px;
+              color: $colorHover;
+              transition: 0.5s;
+              &:hover {
+                color: $colorBlack;
+              }
+            }
+          }
+        }
+      }
     }
-    &:hover .filter-content{
-        display: flex !important;
+    &:hover .filter-content {
+      display: flex !important;
     }
-}
-
-.filterCard{
+  }
+  
+  .filterCard {
     text-align: center;
     border: none;
     padding-bottom: 75px;
-    .cardImg{
-        width: 100%;
-        overflow: hidden;
-        cursor: pointer;
-        position: relative;
-        .sold{
-            position: absolute;
-            // height: 30px;
-            padding: 4px 13px;
-            background-color: #2b2b2b;
-            color: #fff;
-            font-family: $playfair-font;
-            font-size: 16px;
-            letter-spacing: 1px;
-            top: 15px;
-            left: 15px;
-            z-index: 666;
-            &:hover{
-                cursor: auto;
-            }
+    .cardImg {
+      width: 100%;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      .sold {
+        position: absolute;
+        // height: 30px;
+        padding: 4px 13px;
+        background-color: #2b2b2b;
+        color: #fff;
+        font-family: $playfair-font;
+        font-size: 16px;
+        letter-spacing: 1px;
+        top: 15px;
+        left: 15px;
+        z-index: 666;
+        &:hover {
+          cursor: auto;
         }
-        .sale{
+      }
+      .sale {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 666;
+        font-family: $playfair-font;
+        color: #2b2b2b;
+        background-color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 4px 15px;
+        &:hover {
+          cursor: auto;
+        }
+      }
+    }
+    .card-img-top {
+      transition: 0.8s;
+      &:hover {
+        transform: scale(1.05);
+        box-sizing: border-box;
+      }
+    }
+    .card-body {
+      font-size: 13px;
+      .card-text {
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-family: $secondary-font;
+      }
+      .card-price {
+        color: $colorGrey;
+        transition: 0.5s;
+        &:hover {
+          // color: $colorRed;
+          cursor: pointer;
+        }
+        span {
+          color: $colorBlack;
+          margin-left: 5px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  
+  #valentine {
+    background-color: #f7f7f7;
+    .valentine {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      padding: 120px 0;
+      .valentineVideo {
+        .valentineImg {
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            position: relative;
+            &:hover {
+              transform: scale(1.05);
+              box-sizing: border-box;
+              cursor: pointer;
+            }
+          }
+          .playIcon {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            color: $colorRed;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 37%;
+            left: 42%;
+            z-index: 666;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .valentineText {
+      padding: 31px 10% 0px 70px;
+      .valentineTitle {
+        letter-spacing: 1px;
+        margin-bottom: 27px;
+        .blackValentine {
+          font-size: 40px;
+          line-height: 50px;
+          font-family: $fair-fontSerif;
+          color: #2b2b2b;
+          .redValentine {
+            color: $colorRed;
+          }
+        }
+      }
+      .valentineAbout {
+        font-size: 17px;
+        color: #6d6a6a;
+        line-height: 29px;
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+  
+  .flower-experts {
+    width: 70%;
+    margin: auto;
+    .flower-experts-title {
+      text-align: center;
+      padding: 160px 0px 60px 0px;
+      width: 50%;
+      margin: auto;
+      h2 {
+        font-size: 42px;
+        color: #2b2b2b;
+        font-family: $fair-fontSerif;
+        line-height: 2;
+      }
+      p {
+        font-size: 20px;
+        font-family: $primary-fonts;
+        color: #6d6a6a;
+      }
+    }
+    .profileAbout {
+      width: 100%;
+      display: flex;
+      .profileContent {
+        width: 100%;
+        padding-bottom: 85px;
+        .profileImg {
+          text-align: center;
+        }
+        .profileName {
+          text-align: center;
+          padding-top: 25px;
+          h6 {
+            color: #1b1b1b;
+            font-family: $secondary-font;
+            font-size: 12px;
+            letter-spacing: 1px;
+          }
+          span {
+            font-size: 13px;
+            color: #afafaf;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+  
+  #joinBunch {
+    background-image: url('../img/h3-background-img.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .joinBunch {
+      width: 70%;
+      margin: auto;
+      padding-top: 183px;
+      padding-bottom: 185px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .joinBunchText {
+        color: white;
+        font-family: $fair-fontSerif;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .customInput {
+        font-size: 12px;
+        padding: 30px 15px;
+        color: #959595;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .customButton {
+        background-color: $colorRed;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border: none;
+        box-shadow: none;
+        padding: 0px 40px;
+        transition: 0.5s;
+        &:hover {
+          cursor: pointer;
+          background-color: red;
+        }
+      }
+    }
+  }
+  
+  #fromOurBlog {
+    background-color: #f8f8f8;
+    .fromOurBlog {
+      width: 70%;
+      margin: auto;
+      padding: 98px 0px 81px 0px;
+      .fromOurBlog-title {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 68px;
+        h2 {
+          font-size: 38px;
+          font-family: $fair-fontSerif;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+          font-family: $primary-fonts;
+          color: #6d6a6a;
+          line-height: 1.5;
+          // letter-spacing: 1px;
+        }
+      }
+      .fromOurBlog-cards {
+        width: 100%;
+        display: flex;
+        .blogCard {
+          padding: 0 5px;
+          border: none;
+          background-color: #f8f8f8;
+          // text-align: center;
+          .blogCardImg {
+            overflow: hidden;
+            position: relative;
+            img {
+              border-radius: 0px;
+              transition: 0.5s;
+              &:hover {
+                transform: scale(1.05);
+                box-sizing: border-box;
+                cursor: pointer;
+              }
+            }
+          }
+          .blogCardDate {
             position: absolute;
             top: 15px;
             left: 15px;
             z-index: 666;
-            font-family: $playfair-font;
+            font-family: $secondary-font;
             color: #2b2b2b;
             background-color: #fff;
-            font-size: 16px;
+            font-size: 11px;
             letter-spacing: 1px;
-            padding: 4px 15px;
-            &:hover{
-                cursor: auto;
+            padding: 7px 16px;
+            transition: 0.5;
+            &:hover {
+              cursor: pointer;
+              color: $colorRed;
             }
-        }
-    }
-    .card-img-top{
-        transition: .8s;
-        &:hover{
-            transform: scale(1.05);;
-            box-sizing: border-box;
-     }   
-    }
-    .card-body{
-        font-size: 13px;
-        .card-text{
-            letter-spacing: 1px;
-            cursor: pointer;
-            font-family: $secondary-font;
-    }
-        .card-price{
-            color: $colorGrey;
-            transition: .5s;
-            &:hover{
-                // color: $colorRed;
+            p {
+              margin: 0px;
+            }
+          }
+  
+          .blogCard-body {
+            text-align: center;
+            h5 {
+              font-family: $fair-fontSerif;
+              font-size: 24px;
+              margin: 15px 0px;
+              &:hover {
                 cursor: pointer;
+              }
             }
-            span{
-                color: $colorBlack;
-                margin-left: 5px;
-                font-weight: 300;
+            p {
+              font-family: $primary-fonts;
+              color: #6d6a6a;
+              font-size: 17px;
             }
+          }
         }
+      }
     }
-}
+  }
 
-#valentine{
-    background-color: #f7f7f7;
-    .valentine{
-        width: 70%;
-        margin: auto;
-        display: flex;
-        padding: 0;
-        .valentineVideo{
-            .valentineImg{
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    transition: .5s;
-                    &:hover{
-                        transform: scale(1.07);
-                    }
-                }
-            }
-            
-        }
-        
-    }
-}
-
-
+  .florist-slider{
+      width: 70%;
+      margin: auto;
+  }
+  

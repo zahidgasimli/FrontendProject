@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
@@ -126,7 +127,7 @@
             <div class="categoriesList col-lg-8">
                 <ul>
                     <li>
-                        <a href="#" style="color: #f34f3f !important;">ALL</a>
+                        <a href="#" class="activeLi">ALL</a>
                     </li>
                     <li>
                         <a href="#">POPULAR</a>
@@ -285,17 +286,169 @@
             <div class="valentineVideo col-lg-6">
                 <div class="valentineImg">
                     <img src="img/h3-video-img.jpg" alt="">
+                    <div class="playIcon">
+                        <i class="fas fa-play"></i>
+                    </div>
                 </div>
+
             </div>
             <div class="valentineText col-lg-6">
-                <h2>Suprise Your <span>Valentine!</span>
-                    Let us arrange a smile.</h2>
-                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion... </p>
+                <div class="valentineTitle">
+                    <h2 class="blackValentine">Suprise Your <span class="redValentine">Valentine!</span>
+                        Let us arrange a smile.</h2>
+                </div>
+                <div class="valentineAbout">
+                    <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion... </p>
+                    <p>
+                        <img src="img/h1-custom-icon.png" alt="">
+                        Hand picked just for you.
+                    </p>
+                    <p>
+                        <img src="img/h1-custom-icon.png" alt="">
+                        Unique flower arrangements
+                    </p>
+                    <p>
+                        <img src="img/h1-custom-icon.png" alt="">
+                        Best way to say you care.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="flower-experts">
+        <div class="flower-experts">
+            <div class="flower-experts-title">
+                <h2>Flower Experts</h2>
+                <p>A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for
+                    you.</p>
+            </div>
+            <div class="profileAbout">
+                <div class="profileContent col-lg-3">
+                    <div class="profileImg">
+                        <img src="img/h3-team-img-1.png" alt="">
+                    </div>
+                    <div class="profileName">
+                        <h6>CRYSTAL BROOKS</h6>
+                        <span>Florist</span>
+                    </div>
+                </div>
+                <div class="profileContent col-lg-3">
+                    <div class="profileImg">
+                        <img src="img/h3-team-img-2.png" alt="">
+                    </div>
+                    <div class="profileName">
+                        <h6>SHIRLEY HARRIS</h6>
+                        <span>Manager</span>
+                    </div>
+                </div>
+                <div class="profileContent col-lg-3">
+                    <div class="profileImg">
+                        <img src="img/h3-team-img-3.png" alt="">
+                    </div>
+                    <div class="profileName">
+                        <h6>BEVERLY CLARK</h6>
+                        <span>Florist</span>
+                    </div>
+                </div>
+                <div class="profileContent col-lg-3">
+                    <div class="profileImg">
+                        <img src="img/h3-team-img-4.png" alt="">
+                    </div>
+                    <div class="profileName">
+                        <h6>AMANDA WATKINS</h6>
+                        <span>Florist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="joinBunch">
+        <div class="joinBunch">
+            <div class="joinBunchText">
+                <h3>Join The Colorful Bunch!</h3>
+            </div>
+            <div class="input-group inpt input-group-lg w-50">
+                <input type="email" class="form-control customInput " value size="40" placeholder="Email Adress"
+                    required aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <div class="input-group-prepend">
+                    <span class="input-group-text customButton" id="inputGroup-sizing-lg ">SUBSCRIBE</span>
+                </div>
+            </div>
+    </section>
+
+    <section id="fromOurBlog">
+        <div class="fromOurBlog">
+            <div class="fromOurBlog-title">
+                <h2>From our Blog</h2>
+                <p>A perfect blend of creativity, energy, communication, happiness and love. Let us arrange a smile for
+                    you.</p>
+            </div>
+            <div class="fromOurBlog-cards col-lg-12">
+                <div class="card blogCard col-lg-4" style="width: 22rem;">
+                    <div class="blogCardImg">
+                        <img class="card-img-top" src="img/blog-feature-img-1.jpg" alt="Card image cap">
+                        <div class="blogCardDate">
+                            <p>27.04.2018 </p>
+                        </div>
+                    </div>
+
+                    <div class="card-body blogCard-body">
+                        <h5 class="card-title">Flower Power</h5>
+                        <p class="card-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                    </div>
+                </div>
+                <div class="card blogCard col-lg-4" style="width: 22rem;">
+                    <div class="blogCardImg">
+                        <img class="card-img-top" src="img/blog-feature-img-3.jpg" alt="Card image cap">
+                        <div class="blogCardDate">
+                            <p>03.05.2018 </p>
+                        </div>
+                    </div>
+                    <div class="card-body blogCard-body">
+                        <h5 class="card-title">Local Florists</h5>
+                        <p class="card-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                    </div>
+                </div>
+                <div class="card blogCard col-lg-4" style="width: 22rem;">
+                    <div class="blogCardImg">
+                        <img class="card-img-top" src="img/blog-feature-img-4.jpg" alt="Card image cap">
+                        <div class="blogCardDate">
+                            <p>03.05.2018 </p>
+                        </div>
+                    </div>
+                    <div class="card-body blogCard-body">
+                        <h5 class="card-title">Flower Beauty</h5>
+                        <p class="card-text">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="florist-slider">
+        <div class="florist-slider">
+            <div class="floristSlide">
+                <button type="button" class="slick-prev">Previous</button>
+                <button type="button" class="slick-next">Next</button>
+                <div>
+                    <img src="img/h3-team-img-1.png" alt="">
+                    <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua. </p>
+                    <span>Anna Barnes</span>
+                    <span>Florist</span>
+                </div>
+                <div>
+                    <img src="img/h3-team-img-4.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
+                    <span>Jasmine White</span>
+                    <span>Florist</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- <script src="https://kit.fontawesome.com/191583dafd.js" crossorigin="anonymous"></script> -->
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

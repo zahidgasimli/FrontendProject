@@ -5,20 +5,12 @@
           box-sizing: border-box;
 }
 
-.fontColor {
-  color: black !important;
-}
-
-.fontColorRed {
-  color: #f34f3f !important;
-}
-
 .primaryFamily {
   font-family: "Montserrat", sans-serif;
 }
 
 .underLine {
-  border-bottom: 1px solid black !important;
+  border-bottom: 1px solid black;
 }
 
 .logo {
@@ -47,6 +39,11 @@
 
 .navbar-nav .nav-item .nav-link {
   padding: 0;
+  color: black;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: black;
 }
 
 .navbar-nav .nav-item .nav-link i {
@@ -54,15 +51,15 @@
   margin-right: 20px;
 }
 
-.fa-shopping-bag {
+.navbar-nav .nav-item .nav-link .fa-shopping-bag {
   position: relative;
 }
 
-.fa-shopping-bag sup {
+.navbar-nav .nav-item .nav-link .fa-shopping-bag sup {
   position: absolute;
   top: 0px;
   right: -7px;
-  background-color: #f34f3f !important;
+  background-color: #f34f3f;
   color: white;
   padding: 5px;
   border-radius: 5px;
@@ -118,13 +115,17 @@
 
 .categories .categoriesList ul li a {
   text-decoration: none;
-  color: black !important;
-  -webkit-transition: .5s;
-  transition: .5s;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .categories .categoriesList ul li a:hover {
-  color: #f34f3f !important;
+  color: #f34f3f;
+}
+
+.categories .categoriesList ul .activeLi {
+  color: #f34f3f;
 }
 
 .filter {
@@ -167,6 +168,7 @@
 .filter .filter-content .sort-by h5 {
   font-size: 25px;
   line-height: 2;
+  font-family: "playfair display,serif";
 }
 
 .filter .filter-content .sort-by ul {
@@ -181,12 +183,12 @@
   text-decoration: none;
   font-size: 13px;
   color: #737373;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .filter .filter-content .sort-by ul li a:hover {
-  color: black !important;
+  color: black;
 }
 
 .filter .filter-content .price-range {
@@ -196,6 +198,7 @@
 .filter .filter-content .price-range h5 {
   font-size: 25px;
   line-height: 2;
+  font-family: "playfair display,serif";
 }
 
 .filter .filter-content .price-range ul {
@@ -210,12 +213,12 @@
   text-decoration: none;
   font-size: 13px;
   color: #737373;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .filter .filter-content .price-range ul li a:hover {
-  color: black !important;
+  color: black;
 }
 
 .filter:hover .filter-content {
@@ -272,8 +275,8 @@
 }
 
 .filterCard .card-img-top {
-  -webkit-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .filterCard .card-img-top:hover {
@@ -295,8 +298,8 @@
 
 .filterCard .card-body .card-price {
   color: #afafaf;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .filterCard .card-body .card-price:hover {
@@ -304,7 +307,7 @@
 }
 
 .filterCard .card-body .card-price span {
-  color: black !important;
+  color: black;
   margin-left: 5px;
   font-weight: 300;
 }
@@ -319,7 +322,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  padding: 120px 0;
 }
 
 #valentine .valentine .valentineVideo .valentineImg {
@@ -328,12 +331,306 @@
 
 #valentine .valentine .valentineVideo .valentineImg img {
   width: 100%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
 }
 
 #valentine .valentine .valentineVideo .valentineImg img:hover {
-  -webkit-transform: scale(1.07);
-          transform: scale(1.07);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+#valentine .valentine .valentineVideo .valentineImg .playIcon {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: #f34f3f;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 37%;
+  left: 42%;
+  z-index: 666;
+}
+
+#valentine .valentine .valentineVideo .valentineImg .playIcon:hover {
+  cursor: pointer;
+}
+
+#valentine .valentineText {
+  padding: 31px 10% 0px 70px;
+}
+
+#valentine .valentineText .valentineTitle {
+  letter-spacing: 1px;
+  margin-bottom: 27px;
+}
+
+#valentine .valentineText .valentineTitle .blackValentine {
+  font-size: 40px;
+  line-height: 50px;
+  font-family: "playfair display,serif";
+  color: #2b2b2b;
+}
+
+#valentine .valentineText .valentineTitle .blackValentine .redValentine {
+  color: #f34f3f;
+}
+
+#valentine .valentineText .valentineAbout {
+  font-size: 17px;
+  color: #6d6a6a;
+  line-height: 29px;
+}
+
+#valentine .valentineText .valentineAbout img {
+  margin-right: 12px;
+}
+
+.flower-experts {
+  width: 70%;
+  margin: auto;
+}
+
+.flower-experts .flower-experts-title {
+  text-align: center;
+  padding: 160px 0px 60px 0px;
+  width: 50%;
+  margin: auto;
+}
+
+.flower-experts .flower-experts-title h2 {
+  font-size: 42px;
+  color: #2b2b2b;
+  font-family: "playfair display,serif";
+  line-height: 2;
+}
+
+.flower-experts .flower-experts-title p {
+  font-size: 20px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+}
+
+.flower-experts .profileAbout {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flower-experts .profileAbout .profileContent {
+  width: 100%;
+  padding-bottom: 85px;
+}
+
+.flower-experts .profileAbout .profileContent .profileImg {
+  text-align: center;
+}
+
+.flower-experts .profileAbout .profileContent .profileName {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.flower-experts .profileAbout .profileContent .profileName h6 {
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.flower-experts .profileAbout .profileContent .profileName span {
+  font-size: 13px;
+  color: #afafaf;
+  letter-spacing: 0.5px;
+}
+
+#joinBunch {
+  background-image: url("../img/h3-background-img.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#joinBunch .joinBunch {
+  width: 70%;
+  margin: auto;
+  padding-top: 183px;
+  padding-bottom: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#joinBunch .joinBunch .joinBunchText {
+  color: white;
+  font-family: "playfair display,serif";
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+#joinBunch .joinBunch .joinBunchText h3 {
+  font-size: 30px;
+}
+
+#joinBunch .joinBunch .customInput {
+  font-size: 12px;
+  padding: 30px 15px;
+  color: #959595;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#joinBunch .joinBunch .customButton {
+  background-color: #f34f3f;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 0px 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#joinBunch .joinBunch .customButton:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+#fromOurBlog {
+  background-color: #f8f8f8;
+}
+
+#fromOurBlog .fromOurBlog {
+  width: 70%;
+  margin: auto;
+  padding: 98px 0px 81px 0px;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-title {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 68px;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-title h2 {
+  font-size: 38px;
+  font-family: "playfair display,serif";
+  margin-bottom: 20px;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-title p {
+  font-size: 20px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+  line-height: 1.5;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard {
+  padding: 0 5px;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardImg {
+  overflow: hidden;
+  position: relative;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardImg img {
+  border-radius: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardImg img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardDate {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 666;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  background-color: #fff;
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 7px 16px;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardDate:hover {
+  cursor: pointer;
+  color: #f34f3f;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCardDate p {
+  margin: 0px;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCard-body {
+  text-align: center;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCard-body h5 {
+  font-family: "playfair display,serif";
+  font-size: 24px;
+  margin: 15px 0px;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCard-body h5:hover {
+  cursor: pointer;
+}
+
+#fromOurBlog .fromOurBlog .fromOurBlog-cards .blogCard .blogCard-body p {
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+  font-size: 17px;
+}
+
+.florist-slider {
+  width: 70%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
