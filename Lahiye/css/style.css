@@ -9,53 +9,416 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.underLine {
-  border-bottom: 1px solid black;
+.activeNavlist::before {
+  width: 100% !important;
+  visibility: visible !important;
 }
 
 .logo {
   width: 250px;
   height: 25px;
-  text-align: center;
-  position: relative;
-  top: 14px;
-  left: 87px;
+  text-align: left;
+}
+
+.logo a {
+  padding: 14px 0px 0px 0px;
 }
 
 .logo a img {
   height: 25px;
 }
 
-.navbar-nav {
-  margin-left: 70px;
+.headContainer {
+  width: 70%;
+  margin: auto;
+  position: relative;
 }
 
-.navbar-nav .nav-item {
-  padding-left: 50px;
+.headContainer .navbar-expand-lg {
+  padding: 0px;
+}
+
+.headContainer .navbar-collapse {
+  padding: 0px;
+  position: static;
+}
+
+.headContainer .navbar-nav .nav-item {
+  padding-left: 47px;
   padding-top: 50px;
   font-size: 12px;
   letter-spacing: 2px;
+  position: relative;
 }
 
-.navbar-nav .nav-item .nav-link {
+.headContainer .navbar-nav .nav-item .navHome:hover .homeList {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.headContainer .navbar-nav .nav-item .navHome .homeList {
+  width: 200px;
+  padding: 70px 35px 30px 35px;
+  background-color: white;
+  position: absolute;
+  top: 69px;
+  left: 11px;
+  z-index: 666;
+  line-height: 30px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+  transition: -webkit-transform 0.26s;
+  transition: transform 0.26s;
+  transition: transform 0.26s, -webkit-transform 0.26s;
+}
+
+.headContainer .navbar-nav .nav-item .navHome .homeList ul {
+  list-style: none;
+}
+
+.headContainer .navbar-nav .nav-item .navHome .homeList ul li a {
+  color: #737373;
+  text-decoration: none;
+  position: relative;
+}
+
+.headContainer .navbar-nav .nav-item .navHome .homeList ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #737373;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headContainer .navbar-nav .nav-item .navHome .homeList ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.headContainer .navbar-nav .nav-item .navPage:hover .pageList {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.headContainer .navbar-nav .nav-item .navPage .pageList {
+  width: 200px;
+  padding: 70px 75px 30px 35px;
+  background-color: white;
+  position: absolute;
+  top: 69px;
+  left: 15px;
+  z-index: 666;
+  line-height: 30px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+  transition: -webkit-transform 0.26s;
+  transition: transform 0.26s;
+  transition: transform 0.26s, -webkit-transform 0.26s;
+}
+
+.headContainer .navbar-nav .nav-item .navPage .pageList ul {
+  list-style: none;
+}
+
+.headContainer .navbar-nav .nav-item .navPage .pageList ul li a {
+  color: #737373;
+  text-decoration: none;
+  position: relative;
+}
+
+.headContainer .navbar-nav .nav-item .navPage .pageList ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #737373;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headContainer .navbar-nav .nav-item .navPage .pageList ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.headContainer .navbar-nav .nav-item .navShop:hover .shopList {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 69px;
+  left: 0px;
+  width: 100%;
+  z-index: 666;
+  background-color: white;
+  padding-top: 45px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+  transition: -webkit-transform 0.26s;
+  transition: transform 0.26s;
+  transition: transform 0.26s, -webkit-transform 0.26s;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes {
+  padding: 40px 80px;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes h4 {
+  font-size: 22px;
+  font-family: "playfair display,serif";
+  color: #1b1b1b;
+  padding: 20px 0px;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes ul {
+  list-style: none;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes ul li a {
+  text-decoration: none;
+  color: #737373;
+  position: relative;
+  font-size: 12px;
+  line-height: 3;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #737373;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio:hover .portfolioList {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList {
+  width: 210px;
+  padding: 70px 20px 30px 35px;
+  background-color: white;
+  position: absolute;
+  top: 69px;
+  left: 15px;
+  z-index: 666;
+  line-height: 30px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+  transition: -webkit-transform 0.26s;
+  transition: transform 0.26s;
+  transition: transform 0.26s, -webkit-transform 0.26s;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul {
+  list-style: none;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li a {
+  color: #737373;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #737373;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li a span {
+  float: right;
+  color: #737373;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li .portfolioListHover-1 {
+  position: absolute;
+  top: 54%;
+  left: 100%;
+  width: 200px;
+  padding: 23px;
+  background-color: white;
+  display: none;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li .portfolioListHover-2 {
+  position: absolute;
+  top: 67%;
+  left: 100%;
+  width: 200px;
+  padding: 23px;
+  background-color: white;
+  display: none;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li:hover .portfolioListHover-1 {
+  display: block;
+}
+
+.headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li:hover .portfolioListHover-2 {
+  display: block;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog:hover .blogList {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList {
+  width: 210px;
+  padding: 70px 30px 30px 35px;
+  background-color: white;
+  position: absolute;
+  top: 69px;
+  left: 15px;
+  z-index: 666;
+  line-height: 30px;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  font-size: 12px;
+  line-height: 2.5;
+  font-family: "Montserrat", sans-serif;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transition: -webkit-transform 0.26s;
+  transition: -webkit-transform 0.26s;
+  transition: transform 0.26s;
+  transition: transform 0.26s, -webkit-transform 0.26s;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul {
+  list-style: none;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li a {
+  color: #737373;
+  text-decoration: none;
+  position: relative;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #737373;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li a span {
+  float: right;
+  color: #737373;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li .blogListHover {
+  position: absolute;
+  top: 54%;
+  left: 100%;
+  width: 200px;
+  padding: 23px;
+  background-color: white;
+  display: none;
+}
+
+.headContainer .navbar-nav .nav-item .navBlog .blogList ul li:hover .blogListHover {
+  display: block;
+}
+
+.headContainer .navbar-nav .nav-item .navIcon {
   padding: 0;
   color: black;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.headContainer .navbar-nav .nav-item .navIcon:hover {
   color: black;
 }
 
-.navbar-nav .nav-item .nav-link i {
+.headContainer .navbar-nav .nav-item .navIcon .fa-search {
+  font-size: 19px;
+  margin-right: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.headContainer .navbar-nav .nav-item .navIcon .fa-search:hover {
+  color: #f34f3f;
+}
+
+.headContainer .navbar-nav .nav-item .navIcon .fa-shopping-bag {
+  position: relative;
   font-size: 19px;
   margin-right: 20px;
 }
 
-.navbar-nav .nav-item .nav-link .fa-shopping-bag {
-  position: relative;
-}
-
-.navbar-nav .nav-item .nav-link .fa-shopping-bag sup {
+.headContainer .navbar-nav .nav-item .navIcon .fa-shopping-bag sup {
   position: absolute;
   top: 0px;
   right: -7px;
@@ -66,29 +429,32 @@
   font-weight: bold;
 }
 
-.homeList {
-  width: 200px;
-  height: 240px;
-  padding: 20px;
-  background-color: white;
+.headContainer .navbar-nav .nav-item .navList {
+  padding: 0;
+  color: black;
+  position: relative;
+}
+
+.headContainer .navbar-nav .nav-item .navList::before {
+  content: "";
   position: absolute;
-  top: 130px;
-  left: 750px;
-  line-height: 30px;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.homeList ul {
-  list-style: none;
+.headContainer .navbar-nav .nav-item .navList:hover::before {
+  visibility: visible;
+  width: 100%;
 }
 
-.homeList ul li a {
-  color: #737373;
-}
-
-.homeList ul li a:hover {
-  text-decoration: none;
+.headContainer .navbar-nav .nav-item .navList:hover {
+  color: black;
 }
 
 .categories {
@@ -632,5 +998,254 @@
 .florist-slider {
   width: 70%;
   margin: auto;
+}
+
+.florist-slider .floristSlide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 84px;
+  padding-bottom: 112px;
+}
+
+.florist-slider .floristSlide .floristSlideCard {
+  text-align: center;
+}
+
+.florist-slider .floristSlide .floristSlideCard img {
+  margin: auto;
+}
+
+.florist-slider .floristSlide .floristSlideCard .floristSlideCardText {
+  font-family: "Lora", serif;
+  color: #4b4747;
+  font-size: 24px;
+  margin: 30px 0px;
+}
+
+.florist-slider .floristSlide .floristSlideCard .floristSlideCardName {
+  display: block;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.florist-slider .floristSlide .floristSlideCard .floristSlideCardJob {
+  display: block;
+  font-size: 12px;
+  color: #afafaf;
+}
+
+.florist-slider .floristSlide .floristSlideCard .customLeftButton {
+  color: #b5b0b0;
+  z-index: 666;
+}
+
+.florist-slider i[class*='fa-long'] {
+  font-size: 45px;
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.florist-slider i[class*='fa-long']:hover {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.florist-slider i[class*='right'] {
+  right: -30px;
+}
+
+.florist-slider i[class*='left'] {
+  left: -30px;
+}
+
+.owlCarousel {
+  width: 100%;
+  padding: 150px 0px;
+}
+
+.owlCarousel .carouselCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.owlCarousel .carouselCard .carouselImg {
+  overflow: hidden;
+  position: relative;
+  width: 225px;
+  height: 250px;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.owlCarousel .carouselCard .carouselImg:focus {
+  outline: none;
+}
+
+.owlCarousel .carouselCard .carouselImg:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.owlCarousel .carouselCard .carouselImg img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.owlCarousel .carouselCard .carouselImg img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+.owlCarousel .carouselCard .carouselImg img:hover + .fa-instagram {
+  cursor: pointer;
+  display: block;
+}
+
+.owlCarousel .carouselCard .carouselImg .fa-instagram {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: white;
+  font-size: 50px;
+  display: none;
+}
+
+.owlCarousel .carouselCard .carouselImg .fa-instagram:hover {
+  display: block;
+  cursor: pointer;
+}
+
+.owlCarousel .owlCarouselTitle {
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  opacity: 0.8;
+  text-transform: uppercase;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+
+.footerAbout {
+  width: 100%;
+  background-color: #fefaf3;
+}
+
+.footerAbout .footerAboutContent {
+  width: 70%;
+  margin: auto;
+  padding: 80px 0px;
+}
+
+.footerAbout .footerAboutContent .footerContactUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footerAbout .footerAboutContent .footerContactUs .customerService {
+  padding: 0;
+}
+
+.footerAbout .footerAboutContent .footerContactUs .customerService h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+.footerAbout .footerAboutContent .footerContactUs .customerService ul li {
+  list-style: none;
+}
+
+.footerAbout .footerAboutContent .footerContactUs .customerService ul li a {
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 12px;
+  letter-spacing: 1px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footerAbout .footerAboutContent .footerContactUs .customerService ul li a:hover {
+  color: #f34f3f;
+}
+
+.footerAbout .footerMedia {
+  width: 100%;
+  background-color: #fefaf3;
+}
+
+.footerAbout .footerMedia .footerMediaContent {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.footerAbout .footerMedia .footerMediaContent .prowedBy {
+  color: #afafaf;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0;
+}
+
+.footerAbout .footerMedia .footerMediaContent .prowedBy p a {
+  text-decoration: none;
+  color: #6d6a6a;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footerAbout .footerMedia .footerMediaContent .prowedBy p a:hover {
+  color: #f34f3f;
+}
+
+.footerAbout .footerMedia .footerMediaContent .visaCards {
+  text-align: center;
+}
+
+.footerAbout .footerMedia .footerMediaContent .visaCards img:hover {
+  cursor: pointer;
+}
+
+.footerAbout .footerMedia .footerMediaContent .contactMedia {
+  text-align: right;
+  padding: 0;
+}
+
+.footerAbout .footerMedia .footerMediaContent .contactMedia a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #afafaf;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.footerAbout .footerMedia .footerMediaContent .contactMedia a:hover {
+  color: #f34f3f;
 }
 /*# sourceMappingURL=style.css.map */

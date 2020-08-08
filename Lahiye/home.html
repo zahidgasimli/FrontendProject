@@ -15,54 +15,311 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white col-lg-12">
-            <div class="logo col-lg-4">
-                <a class="navbar-brand" href="#">
-                    <img src="img/h2-logo-1.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+        <div class="headContainer">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white col-lg-12">
+                <div class="logo col-lg-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/h2-logo-1.png" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
 
 
 
-            <div class="collapse navbar-collapse col-lg-7" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto primaryFamily">
-                    <li class="nav-item">
-                        <a class="nav-link fontColor underLine" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">PAGES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">SHOP <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">BLOG <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">ELEMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#"><i class="fal fa-search"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fontColor" href="#">
-                            <i class="far fa-shopping-bag">
-                                <sup>0</sup>
-                            </i>
-                            <span class="underLine">CART ($0)</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse col-lg-8" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto primaryFamily">
+                        <li class="nav-item">
+                            <div class="navHome">
+                                <a class="nav-link navList fontColor activeNavlist" href="#">HOME <span
+                                        class="sr-only">(current)</span></a>
+                                <div class="homeList">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Main Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Grid Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Flower Shop</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Animated Slider</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Metro Showcase</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Carousel Showcase</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Landing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="navPage">
+                                <a class="nav-link navList fontColor" href="#">PAGES</a>
+                                <div class="pageList">
+                                    <ul>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAG Page</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-static">
+                            <div class="navShop">
+                                <a class="nav-link navList fontColor" href="#">SHOP <span
+                                        class="sr-only">(current)</span></a>
+                                <div class="shopList">
+                                    <div class="shopProductTypes col-lg-3">
+                                        <h4>Product Types</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Standart Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Grouped Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Variable Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Virtual Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">External Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Downloadable Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">On Sale Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Out Of Stock Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">New Product</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shopProductTypes col-lg-3">
+                                        <h4>Shop Pages</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#">My Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Cart</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Checkout</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Orders</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Downloads</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shopProductTypes col-lg-3">
+                                        <h4>Shop Types</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Product List</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Without Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">With Category Filter</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">With Ordering Filter</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop Carousel</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Product Categories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Single Category</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shopProductTypes col-lg-3">
+                                        <h4>Shop Layouts</h4>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Two Columns Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Three Columns Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Four Columns Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Five Columns Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Six Columns Grid</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="navPortfolio">
+                                <a class="nav-link navList fontColor" href="#">PORTFOLIO</a>
+                                <div class="portfolioList">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Standart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Masonry</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Portfolio Layouts
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                                <div class="portfolioListHover-1">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Two Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Three Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Four Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Five Columns</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Six Columns</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="portHover-1">
+                                                Portfolio Single
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                                <div class="portfolioListHover-2">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Small Images</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Small Slider</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Big Images</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Big Slider</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Gallery</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="navBlog">
+                                <a class="nav-link navList fontColor" href="#">BLOG <span
+                                        class="sr-only">(current)</span></a>
+                                <div class="blogList">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Masonry</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Standart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Post Types
+                                                <span><i class="fas fa-angle-right"></i></span>
+                                                <div class="blogListHover">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Standart</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Gallery</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Link</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Quote</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Audio</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Video</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navList fontColor" href="#">ELEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navIcon fontColor" href="#"><i class="fal fa-search"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navIcon fontColor" href="#">
+                                <i class="far fa-shopping-bag">
+                                    <sup>0</sup>
+                                </i>
+                                <span>CART ($0)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
 
     </header>
 
@@ -95,31 +352,7 @@
             </a>
         </div>
 
-        <div class="homeList d-none">
-            <ul>
-                <li>
-                    <a href="#">Main Home</a>
-                </li>
-                <li>
-                    <a href="#">Grid Home</a>
-                </li>
-                <li>
-                    <a href="#">Flower Shop</a>
-                </li>
-                <li>
-                    <a href="#">Animated Slider</a>
-                </li>
-                <li>
-                    <a href="#">Metro Showcase</a>
-                </li>
-                <li>
-                    <a href="#">Carousel Showcase</a>
-                </li>
-                <li>
-                    <a href="#">Landing</a>
-                </li>
-            </ul>
-        </div>
+
     </section>
 
     <section id="categories">
@@ -429,26 +662,190 @@
     <section id="florist-slider">
         <div class="florist-slider">
             <div class="floristSlide">
-                <button type="button" class="slick-prev">Previous</button>
-                <button type="button" class="slick-next">Next</button>
                 <div>
-                    <img src="img/h3-team-img-1.png" alt="">
-                    <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus lingua. </p>
-                    <span>Anna Barnes</span>
-                    <span>Florist</span>
+                    <div class="floristSlideCard">
+                        <img src="img/testimonial-img-2.png" alt="">
+                        <p class="floristSlideCardText">Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                            Cras dapibus lingua. </p>
+                        <span class="floristSlideCardName">Anna Barnes</span>
+                        <span class="floristSlideCardJob">Florist</span>
+                    </div>
                 </div>
                 <div>
-                    <img src="img/h3-team-img-4.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.</p>
-                    <span>Jasmine White</span>
-                    <span>Florist</span>
+                    <div class="floristSlideCard">
+                        <img src="img/testimonial-img-1.png" alt="">
+                        <p class="floristSlideCardText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo ligula eget.</p>
+                        <span class="floristSlideCardName">Jasmine White</span>
+                        <span class="floristSlideCardJob">Florist</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="owlCarousel">
+        <div class="owlCarousel col-lg-12">
+            <div class="carouselCard autoplay">
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-1.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-2.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-3.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-4.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-1.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-2.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-3.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-4.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-1.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-2.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-3.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="carouselImg">
+                    <img src="img/owlcarousel-4.jpg" alt="">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="owlCarouselTitle">#Fiorello</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerAbout">
+            <div class="footerAboutContent">
+                <div class="footerContactUs">
+                    <div class="customerService col-lg-3">
+                        <h6>Customer Service</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Help & Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Returns & Refunds</a>
+                            </li>
+                            <li>
+                                <a href="#">Online Stores</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customerService  col-lg-3">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Tracking</a>
+                            </li>
+                            <li>
+                                <a href="#">FAG Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customerService  col-lg-3">
+                        <h6>Social Media</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">Instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Tumblr</a>
+                            </li>
+                            <li>
+                                <a href="#">Pinterest</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="customerService  col-lg-3">
+                        <h6>Archive</h6>
+                        <ul>
+                            <li>
+                                <a href="#">Designer Shoes</a>
+                            </li>
+                            <li>
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Feature Index</a>
+                            </li>
+                            <li>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <a href="#">Help & Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footerMedia">
+                <div class="footerMediaContent">
+                    <div class="prowedBy col-lg-4">
+                        <p>Powered by <a href="#">Mikado Themes</a> 2018</p>
+                    </div>
+                    <div class="visaCards col-lg-4">
+                        <img src="img/footer-bottom-1.png" alt="">
+                    </div>
+                    <div class="contactMedia col-lg-4">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
     <!-- <script src="https://kit.fontawesome.com/191583dafd.js" crossorigin="anonymous"></script> -->
-    <script src="slick-1.8.1/slick/slick.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -459,6 +856,7 @@
         integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
