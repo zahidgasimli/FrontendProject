@@ -48,7 +48,21 @@
     }
   }
 
-  .headContainer{
+  .navbar-fixed {
+    top: 0px !important;
+}
+.secondNavBar{
+  position: fixed;
+  top: -115px;
+  transition: .5s;
+  z-index: 999;
+  border-bottom: 1px solid #eee;
+}
+
+  .navHeader{
+    width: 100%;
+    background-color: white;
+    .headContainer{
       width: 70%;
       margin: auto;
       position: relative;
@@ -278,7 +292,8 @@
                         width: 200px;
                         padding: 23px;
                         background-color: white;
-                        display: none;
+                        opacity: 0;
+                        transition: opacity .5s;
                     }
                     .portfolioListHover-2{
                         position: absolute;
@@ -290,7 +305,7 @@
                         display: none;
                     }
                     &:hover .portfolioListHover-1{
-                        display: block;
+                      opacity: 1;
                     }
                     &:hover .portfolioListHover-2{
                         display: block;
@@ -361,6 +376,116 @@
                 }
               }
           }
+          .navElements{
+            &:hover .elementsList{
+                transform: scaleY(1);;
+            }
+              .elementsList{
+                width: 210px;
+                padding: 70px 30px 30px 35px;
+                background-color: white;
+                position: absolute;
+                top: 69px;
+                left: 15px;
+                z-index: 666;
+                line-height: 30px;
+                transform: scaleY(0);
+                font-size: 12px;
+                line-height: 2.5;
+                font-family: $secondary-font;
+                transform-origin: top;
+                transition: transform 0.26s;
+                ul {
+                  list-style: none;
+                  li {
+                    a {
+                      color: #737373;
+                      text-decoration: none;
+                      position: relative;
+                      &::before{
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 1px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #737373;
+                        visibility: hidden;
+                        transition: all 0.3s ease-in-out;
+                      }
+                      &:hover::before{
+                        visibility: visible;
+                        width: 100%;
+                    }
+                    span{
+                        float: right;
+                        color: #737373;
+                    }
+                    }
+                    .blogListHover{
+                        position: absolute;
+                        top: 54%;
+                        left: 100%;
+                        width: 200px;
+                        padding: 23px;
+                        background-color: white;
+                        display: none;
+                    }
+                    &:hover .blogListHover{
+                        display: block;
+                    }
+                    .elementsHover-1{
+                        position: absolute;
+                        top: 21%;
+                        left: 100%;
+                        width: 200px;
+                        padding: 23px;
+                        background-color: white;
+                        display: none;
+                    }
+                    &:hover .elementsHover-1{
+                        display: block;
+                    }
+                    .elementsHover-2{
+                        position: absolute;
+                        top: 35%;
+                        left: 100%;
+                        width: 200px;
+                        padding: 23px;
+                        background-color: white;
+                        display: none;
+                    }
+                    &:hover .elementsHover-2{
+                        display: block;
+                    }
+                    .elementsHover-3{
+                        position: absolute;
+                        top: 48%;
+                        left: 100%;
+                        width: 200px;
+                        padding: 23px;
+                        background-color: white;
+                        display: none;
+                    }
+                    &:hover .elementsHover-3{
+                        display: block;
+                    }
+                    .elementsHover-4{
+                        position: absolute;
+                        top: 62%;
+                        left: 100%;
+                        width: 200px;
+                        padding: 23px;
+                        background-color: white;
+                        display: none;
+                    }
+                    &:hover .elementsHover-4{
+                        display: block;
+                    }
+                  }
+                }
+              }
+          }
           .navIcon{
             padding: 0;
             color: $colorBlack;
@@ -415,13 +540,13 @@
             }
             
             
+            
           }
+          
         }
       }
   }
-  
- 
-  
+  }
   
   
   .categories {
@@ -860,6 +985,10 @@
       }
     }
   }
+
+  .slick-slide:focus{ 
+    outline: none;
+  }
   
   .florist-slider {
     width: 70%;
@@ -978,7 +1107,7 @@
       left: 45%;
     }
   }
-  
+
   .footerAbout {
     width: 100%;
     background-color: #fefaf3;
@@ -1069,4 +1198,194 @@
         }
     }
   }
+
+  //accordions page
+  #title{
+    .mainTitle{
+      width: 100%;
+      background-color: #fafaf9;
+      padding: 80px 10px;
+      .mainTitleContainer{
+        width: 70%;
+        margin: auto;
+        h1{
+          font-size: 55px;
+          color: #0e0e0e;
+          font-family: $fair-fontSerif;
+        }
+      }
+    }
+  }
+
+  #slideToggle{
+    .slideToggle{
+      width: 100%;
+      .slideToggleContainer{
+        width: 70%;
+        margin: auto;
+        padding: 80px 0px;
+        .slideToggle-1{
+          display: flex;
+          .slideToggleElements{
+            .toggleCards{
+              border: none;
+              position: relative;
+              margin-top: 20px;
+              .toggleElements-1, .toggleElements-2{
+                display: flex;
+                border: 1px solid #eee;
+                font-size: 12px;
+                padding: 18px;
+                // margin-top: 20px;
+                transition: .5s;
+                background-color: white;
+                &:hover{
+                  background-color: $colorRed;
+                  color: white;
+                  cursor: pointer;
+                }
+                &:hover .fa-plus{
+                  display: none;
+                }
+                &:hover .fa-minus{
+                  // background-color: $colorRed;
+                  color: white;
+                  cursor: pointer;
+                  display: block;
+                }
+                span{
+                  font-size: 15px;
+                  .fa-minus{
+                    position: relative;
+                    top: 5px;
+                    left: 0px;
+                    display: none;
+                    transition: .5s;
+                  }
+                }
+                p{
+                  margin: 0;
+                  text-transform: uppercase;
+                  font-family: $secondary-font;
+                  padding-top: 3px;
+                  padding-left: 15px;
+                  letter-spacing: 1px;
+                }
+              }
+              .toggleElemensText{
+                display: none;
+              }
+              
+              .activetoggleCard-1, .activetoggleCard-2{
+                display: block;
+              }
+              .activetoggleCardHeader{
+                background-color: $colorRed;
+                color: white;
+                .fa-minus{
+                  display: block !important;
+                }
+                .fa-plus{
+                  display: none;
+                }
+                
+              }
+            }
+          }
+          
+        }
+        .slideToggle-2{
+          display: flex;
+          padding: 50px 0px;
+          .slideToggleElements{
+            .toggleCards{
+              border: none;
+              position: relative;
+              margin-top: 20px;
+              .toggleElements-3, .toggleElements-4{
+                display: flex;
+                border-bottom: 1px solid #eee;
+                font-size: 12px;
+                padding: 18px;
+                // margin-top: 20px;
+                transition: .5s;
+                background-color: white;
+                &:hover{
+                  color: $colorRed;
+                  cursor: pointer;
+                }
+                &:hover .fa-plus{
+                  display: none;
+                }
+                &:hover .fa-minus{
+                  color: $colorRed;
+                  cursor: pointer;
+                  display: block;
+                }
+                span{
+                  font-size: 15px;
+                  .fa-minus{
+                    position: relative;
+                    top: 5px;
+                    left: 0px;
+                    display: none;
+                    transition: .5s;
+                  }
+                }
+                p{
+                  margin: 0;
+                  text-transform: uppercase;
+                  font-family: $secondary-font;
+                  padding-top: 3px;
+                  padding-left: 15px;
+                  letter-spacing: 1px;
+                }
+              }
+              .toggleElemensText{
+                display: none;
+              }
+              
+              .activetoggleCard-3, .activetoggleCard-4{
+                display: block;
+              }
+              .activetoggleCardHeader{
+                color: $colorRed;
+                .fa-minus{
+                  display: block !important;
+                }
+                .fa-plus{
+                  display: none;
+                }
+                
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+  //tabs page
+  .tabs-1{
+    width: 100%;
+    .tabsContainer{
+      width: 70%;
+      margin: auto;
+      .tabsHead-1{
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 12px;
+        a{
+        border: 1px solid #eee;
+        padding: 15px 45px;
+        }
+      }
+      .tabsBody-1{
+        display: none;
+      }
+    }
+  }
+  
   
