@@ -34,7 +34,7 @@
 
 .secondNavBar {
   position: fixed;
-  top: -115px;
+  top: -155px;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 999;
@@ -1602,9 +1602,21 @@
 .tabs-1 .tabsContainer {
   width: 70%;
   margin: auto;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.tabs-1 .tabsContainer .tabsHead-1 {
+.tabs-1 .tabsContainer .tabsContent {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.tabs-1 .tabsContainer .tabsContent .tabsHead {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1613,12 +1625,188 @@
   font-size: 12px;
 }
 
-.tabs-1 .tabsContainer .tabsHead-1 a {
+.tabs-1 .tabsContainer .tabsContent .tabsHead a {
   border: 1px solid #eee;
+  border-bottom: none;
+  border-radius: 0px;
   padding: 15px 45px;
+  color: #1b1b1b;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.tabs-1 .tabsContainer .tabsBody-1 {
+.tabs-1 .tabsContainer .tabsContent .tabsHead a:hover {
+  color: #f34f3f;
+}
+
+.tabs-1 .tabsContainer .tabsContent .tabsHead .btn-selected {
+  background-color: #f34f3f;
+  color: white !important;
+}
+
+.tabs-1 .tabsContainer .tabsContent .tabsBody .content {
   display: none;
+}
+
+.tabs-1 .tabsContainer .tabsContent .tabsBody .content p {
+  border: 1px solid #eee;
+  padding: 75px 47px;
+  font-family: "Lora", serif;
+  color: #6d6a6a;
+  font-size: 17px;
+}
+
+.tabs-1 .tabsContainer .tabsContent .tabsBody .content-selected {
+  display: block;
+}
+
+.tabs-1 .tabsContainer .tabsContent2 .tabsHead a {
+  border: none;
+  background-color: #f6f6f6;
+}
+
+.tabs-1 .tabsContainer .tabsContent2 .tabsHead a:hover {
+  color: white;
+  background-color: #f34f3f;
+}
+
+.tabs-1 .tabsContainer .tabsContent2 .tabsHead .btn-selected {
+  background-color: #f34f3f;
+  color: white;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 {
+  margin-top: 60px;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 .tabsHead {
+  border-bottom: 1px solid #eee;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 .tabsHead a {
+  border: none;
+  padding-left: 0px;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 .tabsHead a:hover {
+  color: #1b1b1b;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 .tabsHead .btn-selected {
+  background-color: white;
+  color: #f34f3f !important;
+}
+
+.tabs-1 .tabsContainer .tabsContent3 .tabsBody .content p {
+  padding: 75px 0px;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 .tabsHead {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 .tabsHead a {
+  border-bottom: 1px solid #eee;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 .tabsHead a:hover {
+  background-color: #f34f3f;
+  color: white;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 .tabsHead .btnCenter {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+.tabs-1 .tabsContainer .tabsContent4 .tabsBody p {
+  padding: 13px 32px !important;
+}
+
+.progress-bar-custom {
+  width: 100%;
+}
+
+.progress-bar-custom .progress-barContainer {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 58px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar-end {
+  padding-top: 170px;
+  padding-bottom: 100px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar-end .progressbar .progress-filVal {
+  background-color: #000000 !important;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar {
+  height: auto;
+  margin: 10px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar .progress-value {
+  font-size: 18px;
+  color: #2b2b2b;
+  font-family: "Montserrat", sans-serif;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar .progress-value span {
+  font-size: 22px !important;
+  font-family: "playfair display,serif";
+  color: #2b2b2b;
+  letter-spacing: 1px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar .progress-value .approach-value {
+  float: right;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar .progress-filVal {
+  background-color: #ebebeb;
+  height: 3px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progressbar .progress-filVal .approach-fill-val {
+  height: 100%;
+  background-color: #f34f3f !important;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .approach-fill-val {
+  height: 20px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .progress-responsive__percent {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+.progress-bar-custom .progress-barContainer .progress-bar1 .rdfront {
+  height: 20px;
 }
 /*# sourceMappingURL=style.css.map */
