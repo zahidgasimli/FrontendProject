@@ -53,7 +53,7 @@
 }
 .secondNavBar{
   position: fixed;
-  top: -155px;
+  top: -255px;
   transition: .5s;
   z-index: 999;
   border-bottom: 1px solid #eee;
@@ -422,18 +422,18 @@
                         color: #737373;
                     }
                     }
-                    .blogListHover{
-                        position: absolute;
-                        top: 54%;
-                        left: 100%;
-                        width: 200px;
-                        padding: 23px;
-                        background-color: white;
-                        display: none;
-                    }
-                    &:hover .blogListHover{
-                        display: block;
-                    }
+                    // .blogListHover{
+                    //     position: absolute;
+                    //     top: 54%;
+                    //     left: 100%;
+                    //     width: 200px;
+                    //     padding: 23px;
+                    //     background-color: white;
+                    //     display: none;
+                    // }
+                    // &:hover .blogListHover{
+                    //     display: block;
+                    // }
                     .elementsHover-1{
                         position: absolute;
                         top: 21%;
@@ -1549,6 +1549,122 @@
         }
       }
       
+    }
+  }
+
+  .shopList{
+    width: 100%;
+    .shopListContainer{
+      width: 70%;
+      margin: auto;
+      .shopList-1{
+        width: 100%;
+        display: flex;
+        padding-top: 120px;
+        padding-bottom: 80px;
+        .listImg{
+          .listMainImg{
+            width: 100%;
+            position: relative;
+              &:hover img{
+                cursor: pointer;
+                opacity: .2;
+              }
+              &:hover .listMainImgHover{
+                cursor: pointer;
+                opacity: 1;
+              }
+            img{
+              width: 100%;
+              transition: .5s;
+            }
+            .listMainImgHover{
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              top: 35%;
+              left: 21%;
+              text-align: center;
+              opacity: 0;
+              transition: .5s;
+                h6{
+                text-transform: uppercase;
+                font-family: $secondary-font;
+                color: #1b1b1b;
+                letter-spacing: 2px;
+                font-size: 12px;
+              }
+              span{
+                color: #afafaf;
+                font-size: 12px;
+              }
+              .btnDanger{
+                border-radius: 0px;
+                background-color: $colorRed;
+                border: none;
+                transition: .5s;
+                text-transform: uppercase;
+                padding: 13px 42px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                font-weight: 500;
+                margin-top: 15px;
+                &:hover{
+                  background-color: red;
+                }
+              }
+            }
+          }
+          .listNew {
+            position: absolute;
+              padding: 4px 13px;
+            background-color: $colorRed;
+            color: #fff;
+            font-family: $playfair-font;
+            font-size: 16px;
+            letter-spacing: 1px;
+            top: 10px;
+            left: 25px;
+            z-index: 666;
+            &:hover {
+              cursor: auto;
+            }
+          }
+          .listSold {
+            position: absolute;
+              padding: 4px 13px;
+            background-color: #2b2b2b;
+            color: #fff;
+            font-family: $playfair-font;
+            font-size: 16px;
+            letter-spacing: 1px;
+            top: 10px;
+            left: 25px;
+            z-index: 666;
+            &:hover {
+              cursor: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .flowerCarousel{
+    width: 100%;
+    .flowerCarouselContainer{
+      width: 70%;
+      margin: auto;
+      display: flex;
+      .flowerCarouselCard{
+        width: 100%;
+          .flowerCarouselImg{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+      }
     }
   }
   

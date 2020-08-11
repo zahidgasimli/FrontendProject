@@ -41,6 +41,17 @@ $(document).ready(function () {
         touchMove: true,
         arrows: false,
     });
+    $('.autoplayFlowers').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        touchMove: true,
+        arrows: true,
+        prevArrow: '<i class="fas fa-caret-left"></i>',
+        nextArrow: '<i class="fas fa-caret-right"></i>',
+    });
     $(document).on("click", ".toggleElements-1", function () {
         $(this).next().slideDown(function () {
             $(this).prev().addClass("activetoggleCardHeader");

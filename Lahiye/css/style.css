@@ -34,7 +34,7 @@
 
 .secondNavBar {
   position: fixed;
-  top: -155px;
+  top: -255px;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 999;
@@ -470,20 +470,6 @@
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li a span {
   float: right;
   color: #737373;
-}
-
-.navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .blogListHover {
-  position: absolute;
-  top: 54%;
-  left: 100%;
-  width: 200px;
-  padding: 23px;
-  background-color: white;
-  display: none;
-}
-
-.navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li:hover .blogListHover {
-  display: block;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .elementsHover-1 {
@@ -1808,5 +1794,150 @@
 
 .progress-bar-custom .progress-barContainer .progress-bar1 .rdfront {
   height: 20px;
+}
+
+.shopList {
+  width: 100%;
+}
+
+.shopList .shopListContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.shopList .shopListContainer .shopList-1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg {
+  width: 100%;
+  position: relative;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg:hover img {
+  cursor: pointer;
+  opacity: .2;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg:hover .listMainImgHover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg .listMainImgHover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 35%;
+  left: 21%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg .listMainImgHover h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #1b1b1b;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg .listMainImgHover span {
+  color: #afafaf;
+  font-size: 12px;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg .listMainImgHover .btnDanger {
+  border-radius: 0px;
+  background-color: #f34f3f;
+  border: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-transform: uppercase;
+  padding: 13px 42px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listMainImg .listMainImgHover .btnDanger:hover {
+  background-color: red;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listNew {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #f34f3f;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 10px;
+  left: 25px;
+  z-index: 666;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listNew:hover {
+  cursor: auto;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listSold {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 10px;
+  left: 25px;
+  z-index: 666;
+}
+
+.shopList .shopListContainer .shopList-1 .listImg .listSold:hover {
+  cursor: auto;
+}
+
+.flowerCarousel {
+  width: 100%;
+}
+
+.flowerCarousel .flowerCarouselContainer {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard {
+  width: 100%;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg {
+  width: 100%;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
