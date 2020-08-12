@@ -171,33 +171,59 @@ $(document).ready(function () {
         $(this).siblings().removeClass("btn-selected");
         $(this).addClass("btn-selected");
         const tabsBody = $(this).parents(".tabsContent").children(".tabsBody").children();
-        tabsBody.each(function(){
-            if($(this).attr("data-id")===btn){
+        tabsBody.each(function () {
+            if ($(this).attr("data-id") === btn) {
                 $(this).addClass("content-selected");
             }
-            else{
+            else {
                 $(this).removeClass("content-selected");
             }
         })
     })
 
-    $(function() { 
-  //delay animation
-  //setTimeout(function(){
-    $('.progressbar').each(function(){
-      var t = $(this);
-      var elem = t.attr('data-perc');
-      $(this).prop('Counter',0).animate({
-        Counter: elem
-      }, {
-        duration: 2000,
-        easing: 'linear',
-        step: function (now) {
-          t.find('.approach-value').text(Math.ceil(now)+'%')
-          t.find('.approach-fill-val').css('width', Math.ceil(now)+'%');
-          t.find('.approach-fill-val').css('background', '#228792');
-        }
-      });
-    })
+    $(function () {
+        //delay animation
+        //setTimeout(function(){
+        $('.progressbar').each(function () {
+            var t = $(this);
+            var elem = t.attr('data-perc');
+            $(this).prop('Counter', 0).animate({
+                Counter: elem
+            }, {
+                duration: 2000,
+                easing: 'linear',
+                step: function (now) {
+                    t.find('.approach-value').text(Math.ceil(now) + '%')
+                    t.find('.approach-fill-val').css('width', Math.ceil(now) + '%');
+                    t.find('.approach-fill-val').css('background', '#228792');
+                }
+            });
+        })
     });
+    $(document).on("click", ".productCount .plus", function () {
+        let count = parseInt($("#count").text());
+        count++;
+        $("#count").text(count);
+    });
+    $(document).on("click", ".productCount .minus", function () {
+        let count = parseInt($("#count").text());
+        if (parseInt($("#count").text()) !== 1) {
+            count--;
+            $("#count").text(count);
+        }
+    });
+    $(document).on("click", ".selectedFLowersTabs a", function () {
+        const btn = $(this).attr("data-id");
+        $(this).siblings().removeClass("selectedActiveTab");
+        $(this).addClass("selectedActiveTab");
+        const tabsBody = $(this).parents("body").children("#selectedTabsContent").find(".selectedTabOfContent");
+        tabsBody.each(function () {
+            if ($(this).attr("data-id") === btn) {
+                $(this).addClass("selectedActiveTabContent");
+            }
+            else {
+                $(this).removeClass("selectedActiveTabContent");
+            }
+        })
+    })
 });

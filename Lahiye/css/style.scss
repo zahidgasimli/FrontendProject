@@ -26,7 +26,6 @@
     font-family: $secondary-font;
   }
   .activeNavlist {
-    // border-bottom: 1px solid $colorBlack;
     &::before{
         width: 100% !important;
         visibility: visible !important;
@@ -1213,6 +1212,11 @@
           color: #0e0e0e;
           font-family: $fair-fontSerif;
         }
+        p{
+          color: #6d6a6a;
+          font-size: 19px;
+          font-family: $playfair-font;
+        }
       }
     }
   }
@@ -1652,20 +1656,518 @@
 
   .flowerCarousel{
     width: 100%;
+    padding: 150px 0px;
     .flowerCarouselContainer{
       width: 70%;
       margin: auto;
       display: flex;
+      position: relative;
       .flowerCarouselCard{
         width: 100%;
+        position: relative;
           .flowerCarouselImg{
             width: 100%;
-            img{
-              width: 100%;
+            text-align: center;
+            .flowerImg{
+              overflow: hidden;
+              img{
+                width: 100%;
+                transition: .5s;
+                &:hover{
+                  transform: scale(1.05);
+                  cursor: pointer;
+                }
+              }
+            }
+            
+            .flowerSold {
+              position: absolute;
+                padding: 4px 13px;
+              background-color: #2b2b2b;
+              color: #fff;
+              font-family: $playfair-font;
+              font-size: 16px;
+              letter-spacing: 1px;
+              top: 10px;
+              left: 25px;
+              z-index: 666;
+              &:hover {
+                cursor: auto;
+              }
+            }
+            .flowerNew {
+              position: absolute;
+                padding: 4px 13px;
+              background-color: $colorRed;
+              color: #fff;
+              font-family: $playfair-font;
+              font-size: 16px;
+              letter-spacing: 1px;
+              top: 10px;
+              left: 25px;
+              z-index: 666;
+              &:hover {
+                cursor: auto;
+              }
+            }
+            h6{
+              font-size: 12px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #1b1b1b;
+              padding: 30px 0px 10px;
+              margin: 0px;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+            span{
+              color: #afafaf;
+              font-size: 12px;
+            };
+          }
+          .fa-caret-left{
+            position: absolute;
+            top: -40px;
+            right: 30px;
+            font-size: 24px;
+            color: #b5b0b0;
+            transition: .5s;
+            &:hover{
+              color: $colorBlack;
+              cursor: pointer;
+            }
+          }
+          .fa-caret-right{
+            position: absolute;
+            top: -40px;
+            right: 10px;
+            font-size: 24px;
+            color: #b5b0b0;
+            transition: .5s;
+            &:hover{
+              color: $colorBlack;
+              cursor: pointer;
             }
           }
       }
+      .carouselTitle{
+        position: absolute;
+        top: -30px;
+        left: 15px;
+        font-size: 13px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #1b1b1b;
+      }
     }
+  }
+
+  .otherFlowerList{
+    width: 100%;
+    padding: 120px 0px;
+    .otherFlowerListContainer{
+      width: 70%;
+      margin: auto;
+      display: flex;
+      .otherFlowerItems{
+        text-align: center;
+        .flowerImg{
+          overflow: hidden;
+          img{
+            width: 100%;
+            transition: .5s;
+            &:hover{
+              transform: scale(1.05);
+              cursor: pointer;
+            }
+          }
+        }
+        h6{
+          padding: 30px 0px 10px;
+          margin: 0px;
+          font-size: 13px;
+          color: #1b1b1b;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        span{
+          font-size: 13px;
+          color: #afafaf;
+        }
+      }
+    }
+  }
+
+  .selectedFlowers{
+    width: 100%;
+    .selectedFlowersContainer{
+      width: 70%;
+      margin: auto;
+      padding: 70px 0px 0px;
+      .selectedFlowersView{
+        display: flex;
+        .selectedFlowersImg{
+          display: flex;
+          padding-left: 0px;
+          .selectedFlowersOtherImgs{
+            // display: flex;
+            // flex-direction: column;
+            .selectedSmallImg{
+              width: 118px;
+              height: 166px;
+              padding-bottom: 20px;
+              img{
+                width: 100%;
+                height: 100%;
+                &:hover{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .selectedMainImg{
+            // width: 498px;
+            height: 642px;
+            padding-left: 30px;
+            img{
+              width: 100%;
+              height: 100%;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .selectedFlowersText{
+          padding: 0px 38px;
+          .selectedFlowersTitle{
+            color: #2b2b2b;
+            font-size: 38px;
+            font-family: $fair-fontSerif;
+          }
+          .selectedFlowersPrice{
+            color: #afafaf;
+            font-size: 15px;
+          }
+          .selectedFlowersAbout{
+            margin: 27px 0px;
+            font-size: 17px;
+            color: #6d6a6a;
+            font-family: $primary-fonts;
+          }
+          .quantity{
+            display: flex;
+            border: 1px solid #eee;
+            width: fit-content;
+            margin-bottom: 45px;
+            span{
+              font-size: 12px;
+              color: #999;
+              margin-right: 92px;
+              padding: 15px;
+            }
+            .productCount{
+              display: flex;
+              align-items: center;
+              padding-right: 30px;
+              width: 80px;
+              p{
+                margin: 0px;
+                padding: 0px 15px;
+                color: #999;
+                font-size: 15px;
+              }
+              .fa-caret-left{
+                color: #999;
+                font-size: 16px;
+                transition: .5s;
+                &:hover{
+                  color: $colorRed;
+                  cursor: pointer;
+                }
+              }
+              .fa-caret-right{
+                color: #999;
+                font-size: 16px;
+                transition: .5s;
+                &:hover{
+                  color: $colorRed;
+                  cursor: pointer;
+                }
+              }
+            }
+            .selectedFlowersBtn{
+              border-radius: 0px;
+              font-size: 12px;
+              font-family: $secondary-font;
+              letter-spacing: 1px;
+              padding: 14px 42px;
+              text-transform: uppercase;
+              background-color: $colorBlack;
+              color: white;
+              transition: .5s;
+              &:hover{
+                background-color: #232323;
+              }
+            }
+          }
+          p{
+            margin: 15px 0px;
+            color: #2b2b2b;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 1px;
+            span{
+              color: #8b8b8b;
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .selectedFLowersTabs{
+        display: flex;
+        padding-top: 100px;
+        // padding-left: 15px;
+        a{
+          color: #1b1b1b;
+          font-size: 12px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          padding: 17px 47px;
+          border: 1px solid #eee;
+          font-family: $secondary-font;
+          border-radius: 0px;
+          box-shadow: none;
+        }
+        .btnCenter{
+          border-left: 0px;
+          border-right: 0px;
+        }
+      }
+    }
+  }
+
+  .selectedActiveTab{
+    background-color: $colorRed;
+    color: white !important;
+  }
+  .selectedActiveTabContent{
+    display: block !important;
+  }
+
+  .selectedTabsContent{
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    .selectedTabsContentContainer{
+      width: 70%;
+      margin: auto;
+      padding: 75px 0px;
+      .selectedTabOfContent{
+        display: none;
+        h3{
+          font-size: 30px;
+          color: #2b2b2b;
+          font-family: $fair-fontSerif;
+        }
+        .powerOfFlowersText{
+          color: #6d6a6a;
+          font-family: $primary-fonts;
+          padding: 20px 125px 20px 0px;
+        }
+      }
+    }
+    table{
+      tbody{
+        tr{
+          th{
+            color: #2b2b2b;
+            padding: 0 10px 0 0;
+            font-size: 13px;
+          }
+          td{
+            font-size: 13px;
+            color: #6d6a6a;
+            padding: 3px 0;
+          }
+        }
+      }
+    }
+    h2{
+      font-size: 30px;
+      color: #2b2b2b;
+      font-family: $fair-fontSerif;
+    }
+    .user{
+      display: flex;
+      padding: 20px 0px;
+      img{
+        width: 70px;
+        height: 100%;
+      }
+      .userName{
+        color: #1b1b1b;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-left: 20px;
+        font-weight: 500;
+        .userDate{
+          color: #afafaf;
+          font-size: 11px;
+        }
+      }
+      .userText{
+        font-size: 17px;
+        color: #6d6a6a;
+        font-family: $primary-fonts;
+        padding-left: 20px;
+        padding-right: 70px;
+       }
+    }
+    .addAReview{
+      font-family: $fair-fontSerif;
+      font-size: 30px;
+      color: #2b2b2b;
+    }
+    form{
+      padding: 15px 0px;
+      .formComment{
+        color: #6d6a6a;
+        font-size: 17px;
+        font-family: $primary-fonts;
+        margin: 0px;
+        padding-bottom: 5px;
+      }
+      .formText{
+        padding: 15px 0px 5px;
+      }
+      textarea{
+        width: 100%;
+        height: 150px;
+        border: 1px solid #e8e8e8;
+        padding: 16px 18px;
+        font-size: 12px;
+        border-radius: 0px;
+        color: #999;
+        &:focus{
+          outline: none;
+          border-color: #6d6a6a;
+        }
+      }
+      .customInput{
+        width: 100%;
+        padding: 19px 18px;
+        border-radius: 0px;
+        font-size: 12px;
+        border: 1px solid #e8e8e8;
+        color: #999;
+        &:focus{
+          outline: none;
+          border-color: #6d6a6a;
+        }
+      }
+      .customCheckbox{
+        margin: 4px;
+      }
+      .checkboxSave{
+        font-size: 15px;
+        color: #6d6a6a;
+        padding-top: 10px;
+      }
+      .btnSubmit{
+        padding: 13px 42px;
+        background-color: $colorRed;
+        color: white;
+        border-radius: 0px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: $secondary-font;
+        letter-spacing: 2px;
+        margin: 15px 0px;
+        transition: .5s;
+        &:hover{
+          background-color: #ff3d2a;
+        }
+      }
+    }
+  }
+
+  .related-products{
+    width: 100%;
+    .related-productsContainer{
+      width: 70%;
+      margin: auto;
+      padding: 120px 0px;
+      .related-productImg{
+        overflow: hidden;
+        img{
+          width: 100%;
+          transition: .5s;
+          &:hover{
+            transform: scale(1.05);
+            cursor: pointer;
+          }
+        }
+        .soldRelatedProduct{
+          position: absolute;
+          padding: 4px 13px;
+          background-color: #2b2b2b;
+          color: #fff;
+          font-family: $playfair-font;
+          font-size: 16px;
+          letter-spacing: 1px;
+          top: 10px;
+          left: 25px;
+          z-index: 666;
+          &:hover {
+            cursor: auto;
+          }
+        }
+      }
+      h2{
+        font-size: 13px;
+        color: #1b1b1b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $secondary-font;
+        margin-left: 15px;
+        margin-bottom: 30px;
+      }
+      .relatedProducts{
+        display: flex;
+        // padding: 40px 0px;
+        .related-productList{
+          text-align: center;
+          h6{
+            font-family: $secondary-font;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            margin-top: 20px;
+            font-size: 13px;
+            margin-bottom: 5px;
+            &:hover{
+              cursor: pointer;
+            }
+          }
+          span{
+            color: #afafaf;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  ::selection{
+    color: white;
+    background-color: $colorRed;
   }
   
   

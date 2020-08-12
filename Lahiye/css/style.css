@@ -1406,6 +1406,12 @@
   font-family: "playfair display,serif";
 }
 
+#title .mainTitle .mainTitleContainer p {
+  color: #6d6a6a;
+  font-size: 19px;
+  font-family: "Playfair Display";
+}
+
 #slideToggle .slideToggle {
   width: 100%;
 }
@@ -1919,6 +1925,7 @@
 
 .flowerCarousel {
   width: 100%;
+  padding: 150px 0px;
 }
 
 .flowerCarousel .flowerCarouselContainer {
@@ -1927,17 +1934,625 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .flowerCarousel .flowerCarouselContainer .flowerCarouselCard {
   width: 100%;
+  position: relative;
 }
 
 .flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg {
   width: 100%;
+  text-align: center;
 }
 
-.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg img {
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerImg {
+  overflow: hidden;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerImg img {
   width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerImg img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerSold {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 10px;
+  left: 25px;
+  z-index: 666;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerSold:hover {
+  cursor: auto;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerNew {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #f34f3f;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 10px;
+  left: 25px;
+  z-index: 666;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg .flowerNew:hover {
+  cursor: auto;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg h6 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  padding: 30px 0px 10px;
+  margin: 0px;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg h6:hover {
+  cursor: pointer;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .flowerCarouselImg span {
+  color: #afafaf;
+  font-size: 12px;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .fa-caret-left {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+  font-size: 24px;
+  color: #b5b0b0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .fa-caret-left:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .fa-caret-right {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  font-size: 24px;
+  color: #b5b0b0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.flowerCarousel .flowerCarouselContainer .flowerCarouselCard .fa-caret-right:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.flowerCarousel .flowerCarouselContainer .carouselTitle {
+  position: absolute;
+  top: -30px;
+  left: 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+}
+
+.otherFlowerList {
+  width: 100%;
+  padding: 120px 0px;
+}
+
+.otherFlowerList .otherFlowerListContainer {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems {
+  text-align: center;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems .flowerImg {
+  overflow: hidden;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems .flowerImg img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems .flowerImg img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems h6 {
+  padding: 30px 0px 10px;
+  margin: 0px;
+  font-size: 13px;
+  color: #1b1b1b;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems h6:hover {
+  cursor: pointer;
+}
+
+.otherFlowerList .otherFlowerListContainer .otherFlowerItems span {
+  font-size: 13px;
+  color: #afafaf;
+}
+
+.selectedFlowers {
+  width: 100%;
+}
+
+.selectedFlowers .selectedFlowersContainer {
+  width: 70%;
+  margin: auto;
+  padding: 70px 0px 0px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedFlowersOtherImgs .selectedSmallImg {
+  width: 118px;
+  height: 166px;
+  padding-bottom: 20px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedFlowersOtherImgs .selectedSmallImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedFlowersOtherImgs .selectedSmallImg img:hover {
+  cursor: pointer;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedMainImg {
+  height: 642px;
+  padding-left: 30px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedMainImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersImg .selectedMainImg img:hover {
+  cursor: pointer;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText {
+  padding: 0px 38px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .selectedFlowersTitle {
+  color: #2b2b2b;
+  font-size: 38px;
+  font-family: "playfair display,serif";
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .selectedFlowersPrice {
+  color: #afafaf;
+  font-size: 15px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .selectedFlowersAbout {
+  margin: 27px 0px;
+  font-size: 17px;
+  color: #6d6a6a;
+  font-family: "Lora", serif;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #eee;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 45px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity span {
+  font-size: 12px;
+  color: #999;
+  margin-right: 92px;
+  padding: 15px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 30px;
+  width: 80px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount p {
+  margin: 0px;
+  padding: 0px 15px;
+  color: #999;
+  font-size: 15px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount .fa-caret-left {
+  color: #999;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount .fa-caret-left:hover {
+  color: #f34f3f;
+  cursor: pointer;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount .fa-caret-right {
+  color: #999;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .productCount .fa-caret-right:hover {
+  color: #f34f3f;
+  cursor: pointer;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .selectedFlowersBtn {
+  border-radius: 0px;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  padding: 14px 42px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText .quantity .selectedFlowersBtn:hover {
+  background-color: #232323;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText p {
+  margin: 15px 0px;
+  color: #2b2b2b;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFlowersView .selectedFlowersText p span {
+  color: #8b8b8b;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFLowersTabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFLowersTabs a {
+  color: #1b1b1b;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 17px 47px;
+  border: 1px solid #eee;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.selectedFlowers .selectedFlowersContainer .selectedFLowersTabs .btnCenter {
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.selectedActiveTab {
+  background-color: #f34f3f;
+  color: white !important;
+}
+
+.selectedActiveTabContent {
+  display: block !important;
+}
+
+.selectedTabsContent {
+  width: 100%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.selectedTabsContent .selectedTabsContentContainer {
+  width: 70%;
+  margin: auto;
+  padding: 75px 0px;
+}
+
+.selectedTabsContent .selectedTabsContentContainer .selectedTabOfContent {
+  display: none;
+}
+
+.selectedTabsContent .selectedTabsContentContainer .selectedTabOfContent h3 {
+  font-size: 30px;
+  color: #2b2b2b;
+  font-family: "playfair display,serif";
+}
+
+.selectedTabsContent .selectedTabsContentContainer .selectedTabOfContent .powerOfFlowersText {
+  color: #6d6a6a;
+  font-family: "Lora", serif;
+  padding: 20px 125px 20px 0px;
+}
+
+.selectedTabsContent table tbody tr th {
+  color: #2b2b2b;
+  padding: 0 10px 0 0;
+  font-size: 13px;
+}
+
+.selectedTabsContent table tbody tr td {
+  font-size: 13px;
+  color: #6d6a6a;
+  padding: 3px 0;
+}
+
+.selectedTabsContent h2 {
+  font-size: 30px;
+  color: #2b2b2b;
+  font-family: "playfair display,serif";
+}
+
+.selectedTabsContent .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.selectedTabsContent .user img {
+  width: 70px;
+  height: 100%;
+}
+
+.selectedTabsContent .user .userName {
+  color: #1b1b1b;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.selectedTabsContent .user .userName .userDate {
+  color: #afafaf;
+  font-size: 11px;
+}
+
+.selectedTabsContent .user .userText {
+  font-size: 17px;
+  color: #6d6a6a;
+  font-family: "Lora", serif;
+  padding-left: 20px;
+  padding-right: 70px;
+}
+
+.selectedTabsContent .addAReview {
+  font-family: "playfair display,serif";
+  font-size: 30px;
+  color: #2b2b2b;
+}
+
+.selectedTabsContent form {
+  padding: 15px 0px;
+}
+
+.selectedTabsContent form .formComment {
+  color: #6d6a6a;
+  font-size: 17px;
+  font-family: "Lora", serif;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+.selectedTabsContent form .formText {
+  padding: 15px 0px 5px;
+}
+
+.selectedTabsContent form textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #e8e8e8;
+  padding: 16px 18px;
+  font-size: 12px;
+  border-radius: 0px;
+  color: #999;
+}
+
+.selectedTabsContent form textarea:focus {
+  outline: none;
+  border-color: #6d6a6a;
+}
+
+.selectedTabsContent form .customInput {
+  width: 100%;
+  padding: 19px 18px;
+  border-radius: 0px;
+  font-size: 12px;
+  border: 1px solid #e8e8e8;
+  color: #999;
+}
+
+.selectedTabsContent form .customInput:focus {
+  outline: none;
+  border-color: #6d6a6a;
+}
+
+.selectedTabsContent form .customCheckbox {
+  margin: 4px;
+}
+
+.selectedTabsContent form .checkboxSave {
+  font-size: 15px;
+  color: #6d6a6a;
+  padding-top: 10px;
+}
+
+.selectedTabsContent form .btnSubmit {
+  padding: 13px 42px;
+  background-color: #f34f3f;
+  color: white;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 2px;
+  margin: 15px 0px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.selectedTabsContent form .btnSubmit:hover {
+  background-color: #ff3d2a;
+}
+
+.related-products {
+  width: 100%;
+}
+
+.related-products .related-productsContainer {
+  width: 70%;
+  margin: auto;
+  padding: 120px 0px;
+}
+
+.related-products .related-productsContainer .related-productImg {
+  overflow: hidden;
+}
+
+.related-products .related-productsContainer .related-productImg img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.related-products .related-productsContainer .related-productImg img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.related-products .related-productsContainer .related-productImg .soldRelatedProduct {
+  position: absolute;
+  padding: 4px 13px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 16px;
+  letter-spacing: 1px;
+  top: 10px;
+  left: 25px;
+  z-index: 666;
+}
+
+.related-products .related-productsContainer .related-productImg .soldRelatedProduct:hover {
+  cursor: auto;
+}
+
+.related-products .related-productsContainer h2 {
+  font-size: 13px;
+  color: #1b1b1b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.related-products .related-productsContainer .relatedProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.related-products .related-productsContainer .relatedProducts .related-productList {
+  text-align: center;
+}
+
+.related-products .related-productsContainer .relatedProducts .related-productList h6 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.related-products .related-productsContainer .relatedProducts .related-productList h6:hover {
+  cursor: pointer;
+}
+
+.related-products .related-productsContainer .relatedProducts .related-productList span {
+  color: #afafaf;
+  font-size: 13px;
+}
+
+::-moz-selection {
+  color: white;
+  background-color: #f34f3f;
+}
+
+::selection {
+  color: white;
+  background-color: #f34f3f;
 }
 /*# sourceMappingURL=style.css.map */

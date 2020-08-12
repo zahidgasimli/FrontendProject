@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Progress Bar - Fiorello</title>
+    <title>Orange Amaryllis - Fiorello</title>
 </head>
 
 <body>
@@ -86,14 +86,14 @@
                             </li>
                             <li class="nav-item position-static">
                                 <div class="navShop">
-                                    <a class="nav-link navList fontColor" href="#">SHOP <span
+                                    <a class="nav-link navList fontColor activeNavlist" href="#">SHOP <span
                                             class="sr-only">(current)</span></a>
                                     <div class="shopList">
                                         <div class="shopProductTypes col-lg-3">
                                             <h4>Product Types</h4>
                                             <ul>
                                                 <li>
-                                                    <a href="#">Standart Product</a>
+                                                    <a href="#" class="activeNavlist">Standart Product</a>
                                                 </li>
                                                 <li>
                                                     <a href="#">Grouped Product</a>
@@ -353,7 +353,7 @@
                                                                 <a href="#">Google Maps</a>
                                                             </li>
                                                             <li>
-                                                                <a href="#" class="activeNavlist">Progress Bar</a>
+                                                                <a href="#">Progress Bar</a>
                                                             </li>
                                                             <li>
                                                                 <a href="#">Pie Charts</a>
@@ -878,100 +878,168 @@
 
     <section id="title">
         <div class="mainTitle">
-            <div class="mainTitleContainer col-lg-12 col-md-6">
-                <h1>Progress Bar</h1>
+            <div class="mainTitleContainer">
+                <h1>Product List</h1>
+                <p>Where flowers are our inspiration</p>
             </div>
         </div>
     </section>
 
-    <section id="progress-bar">
-        <div class="progress-bar-custom">
-            <div class="progress-barContainer">
-                <div class="progress-bar1 col-lg-6 col-md-12">
-                    <div class="progressbar" data-perc="95">
-                        <div class="progress-value">
-                            <span>Growing</span>
-                            <div class="approach-value"></div>
+    <section id="selectedFlowers">
+        <div class="selectedFlowers">
+            <div class="selectedFlowersContainer">
+                <div class="selectedFlowersView">
+                    <div class="selectedFlowersImg col-lg-6">
+                        <div class="selectedFlowersOtherImgs">
+                            <div class="selectedSmallImg">
+                                <img src="img/shop-2-gallery-4-300x400.jpg" alt="">
+                            </div>
+                            <div class="selectedSmallImg">
+                                <img src="img/shop-2-gallery-3-300x400.jpg" alt="">
+                            </div>
+                            <div class="selectedSmallImg">
+                                <img src="img/shop-2-gallery-2-300x400.jpg" alt="">
+                            </div>
+                            <div class="selectedSmallImg">
+                                <img src="img/shop-2-gallery-1-300x400.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
-                        </div>
-                    </div>
-                    <div class="progressbar" data-perc="80">
-                        <div class="progress-value">
-                            <span>Waterin</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
-                        </div>
-                    </div>
-                    <div class="progressbar" data-perc="55">
-                        <div class="progress-value">
-                            <span>Furtilizing</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
+                        <div class="selectedMainImg">
+                            <img src="img/shop-2-img.jpg" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="progress-bar1 col-lg-6 col-md-12">
-                    <div class="progressbar" data-perc="95">
-                        <div class="progress-value">
-                            <span>Growing</span>
-                            <div class="approach-value"></div>
+                    <div class="selectedFlowersText col-lg-6">
+                        <h2 class="selectedFlowersTitle">Orange Amaryllis</h2>
+                        <span class="selectedFlowersPrice">$259</span>
+                        <p class="selectedFlowersAbout">Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeos.
+                            Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non
+                            neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc.</p>
+                        <div class="quantity">
+                            <span>Quantity</span>
+                            <div class="productCount">
+                                <i class="fas fa-caret-left minus"></i>
+                                <p id="count">1</p>
+                                <i class="fas fa-caret-right plus"></i>
+                            </div>
+                            <div class="btn selectedFlowersBtn">Add to Cart</div>
                         </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
-                        </div>
-                    </div>
-                    <div class="progressbar" data-perc="80">
-                        <div class="progress-value">
-                            <span>Waterin</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
-                        </div>
-                    </div>
-                    <div class="progressbar" data-perc="55">
-                        <div class="progress-value">
-                            <span>Furtilizing</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
-                        </div>
+                        <p>SKU: <span>989873</span></p>
+                        <p>Categories: <span>Various, Exotic</span></p>
+                        <p>Tags: <span>Llilies, Orchids</span></p>
                     </div>
                 </div>
-                <div class="progress-bar1 progress-bar-end col-lg-12">
-                    <div class="progressbar" data-perc="95">
-                        <div class="progress-value">
-                            <span>Growing</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
+                <div class="selectedFLowersTabs">
+                    <a role="button" class="btn selectedActiveTab" data-id="0">Description</a>
+                    <a role="button" class="btn btnCenter" data-id="1">Additional Information</a>
+                    <a role="button" class="btn" data-id="2">Reviews (2)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="selectedTabsContent">
+        <div class="selectedTabsContent">
+            <div class="selectedTabsContentContainer">
+                <div class="selectedTabOfContent selectedActiveTabContent" data-id="0">
+                    <h3>The power of flowers</h3>
+                    <p class="powerOfFlowersText">Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                        Phasellus viverra nulla ut metus
+                        varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                        ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
+                        condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+                        nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+                    </p>
+                </div>
+                <div class="selectedTabOfContent" data-id="1">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Weight:</th>
+                                <td>1 kg</td>
+                            </tr>
+                            <tr>
+                                <th>Dimensions:</th>
+                                <td>30 x 30 x 50 cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="selectedTabOfContent" data-id="2">
+                    <h2>Reviews</h2>
+                    <div class="user">
+                        <img src="img/user-img-1-100x100.png" alt="">
+                        <div class="userAbout">
+                            <p class="userName">JOSHUA GARCIA <span class="userDate">27.04.2018</span></p>
+                            <p class="userText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                ligula eget dolor.
+                                Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes,
+                                nascetur
+                                ridiculus mus.</p>
                         </div>
                     </div>
-                    <div class="progressbar" data-perc="80">
-                        <div class="progress-value">
-                            <span>Waterin</span>
-                            <div class="approach-value"></div>
-                        </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
+                    <div class="user">
+                        <img src="img/user-img-2-100x100.png" alt="">
+                        <div class="userAbout">
+                            <p class="userName">JOAN STANLEY <span class="userDate">27.04.2018</span></p>
+                            <p class="userText">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
+                                quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+                                luctus pulvinar, hendrerit</p>
                         </div>
                     </div>
-                    <div class="progressbar" data-perc="55">
-                        <div class="progress-value">
-                            <span>Furtilizing</span>
-                            <div class="approach-value"></div>
+                    <span class="addAReview">Add a review</span>
+                    <form action="#">
+                        <p class="formComment">Your email address will not be published. Required fields are marked *
+                        </p>
+                        <p class="formComment">Your review *</p>
+                        <textarea name="text" id="" cols="30" rows="10"></textarea>
+                        <p class="formComment formText">Name *</p>
+                        <input type="text" class="customInput">
+                        <p class="formComment formText">Email *</p>
+                        <input type="email" class="customInput">
+                        <input type="checkbox" class="customCheckbox">
+                        <p class="checkboxSave">Save my name, email, and website in this browser for the next time I
+                            comment.</p>
+                        <div class="btn btnSubmit">Submit</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="related-products">
+        <div class="related-products">
+            <div class="related-productsContainer">
+                <h2>Related Products</h2>
+                <div class="relatedProducts">
+                    <div class="related-productList col-lg-3">
+                        <div class="related-productImg">
+                            <img src="img/shop-4-img-300x400.jpg" alt="">
                         </div>
-                        <div class="progress-filVal">
-                            <div class="approach-fill-val"></div>
+                        <h6>Pink Flower Tree</h6>
+                        <span>$180 - $350</span>
+                    </div>
+                    <div class="related-productList col-lg-3">
+                        <div class="related-productImg">
+                            <img src="img/shop-8-img-300x400.jpg" alt="">
                         </div>
+                        <h6>Summer Savory</h6>
+                        <span>$259</span>
+                    </div>
+                    <div class="related-productList col-lg-3">
+                        <div class="related-productImg">
+                            <img src="img/shop-10-img-300x400.jpg" alt="">
+                            <div class="soldRelatedProduct">Sold</div>
+                        </div>
+                        <h6>Sweet Alyssum</h6>
+                        <span>$259</span>
+                    </div>
+                    <div class="related-productList col-lg-3">
+                        <div class="related-productImg">
+                            <img src="img/shop-14-img-300x400.jpg" alt="">
+                        </div>
+                        <h6>Majesty Palm</h6>
+                        <span>$259</span>
                     </div>
                 </div>
             </div>
