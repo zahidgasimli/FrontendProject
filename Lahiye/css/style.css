@@ -5,6 +5,49 @@
           box-sizing: border-box;
 }
 
+#slider .slider i[class*="fa-long"] {
+  font-size: 45px;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+#slider .slider i[class*="fa-long"]:hover {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#slider .sliderText {
+  font-size: 45px;
+  font-family: "Playfair Display";
+  display: block;
+  visibility: visible;
+  line-height: 48px;
+  padding: 30px;
+  max-width: 85%;
+}
+
+#slider .sliderText span {
+  color: #f34f3f;
+}
+
+#slider .sliderText p {
+  white-space: normal;
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #6d6a6a;
+  letter-spacing: 0px;
+  font-family: "Lora", serif;
+  text-align: justify;
+}
+
+#slider .slider div:focus {
+  outline: none;
+}
+
 .primaryFamily {
   font-family: "Montserrat", sans-serif;
 }
@@ -76,11 +119,10 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navHome .homeList {
   width: 200px;
-  padding: 70px 35px 30px 35px;
   background-color: white;
   position: absolute;
   top: 69px;
-  left: 11px;
+  left: 20px;
   z-index: 666;
   line-height: 30px;
   -webkit-transform: scaleY(0);
@@ -98,6 +140,11 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navHome .homeList ul {
   list-style: none;
+  padding: 30px 0px;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navHome .homeList ul li {
+  padding: 0px 25px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navHome .homeList ul li a {
@@ -131,7 +178,6 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navPage .pageList {
   width: 200px;
-  padding: 70px 75px 30px 35px;
   background-color: white;
   position: absolute;
   top: 69px;
@@ -153,6 +199,11 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navPage .pageList ul {
   list-style: none;
+  padding: 30px 0px;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navPage .pageList ul li {
+  padding: 0px 30px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navPage .pageList ul li a {
@@ -206,7 +257,7 @@
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes {
-  padding: 40px 80px;
+  padding: 0px 60px 20px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navShop .shopList .shopProductTypes h4 {
@@ -253,7 +304,6 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList {
   width: 210px;
-  padding: 70px 20px 30px 35px;
   background-color: white;
   position: absolute;
   top: 69px;
@@ -275,6 +325,11 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul {
   list-style: none;
+  padding: 30px 0px;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li {
+  padding: 0px 30px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li a {
@@ -310,28 +365,24 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li .portfolioListHover-1 {
   position: absolute;
-  top: 54%;
+  top: 48%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
-  opacity: 0;
-  -webkit-transition: opacity .5s;
-  transition: opacity .5s;
+  display: none;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li .portfolioListHover-2 {
   position: absolute;
-  top: 67%;
+  top: 65%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li:hover .portfolioListHover-1 {
-  opacity: 1;
+  display: block;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navPortfolio .portfolioList ul li:hover .portfolioListHover-2 {
@@ -345,7 +396,6 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navBlog .blogList {
   width: 210px;
-  padding: 70px 30px 30px 35px;
   background-color: white;
   position: absolute;
   top: 69px;
@@ -367,6 +417,11 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navBlog .blogList ul {
   list-style: none;
+  padding: 30px 0px;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navBlog .blogList ul li {
+  padding: 0px 30px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navBlog .blogList ul li a {
@@ -403,7 +458,6 @@
   top: 54%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
@@ -419,7 +473,6 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList {
   width: 210px;
-  padding: 70px 30px 30px 35px;
   background-color: white;
   position: absolute;
   top: 69px;
@@ -441,6 +494,11 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul {
   list-style: none;
+  padding: 30px 0px;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li {
+  padding: 0px 30px;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li a {
@@ -474,10 +532,9 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .elementsHover-1 {
   position: absolute;
-  top: 21%;
+  top: 0px;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
@@ -488,10 +545,9 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .elementsHover-2 {
   position: absolute;
-  top: 35%;
+  top: 17%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
@@ -502,10 +558,9 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .elementsHover-3 {
   position: absolute;
-  top: 48%;
+  top: 35%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
@@ -516,10 +571,9 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navElements .elementsList ul li .elementsHover-4 {
   position: absolute;
-  top: 62%;
+  top: 50%;
   left: 100%;
   width: 200px;
-  padding: 23px;
   background-color: white;
   display: none;
 }
@@ -556,13 +610,46 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navIcon .fa-shopping-bag sup {
   position: absolute;
+  font-size: 9px;
   top: 0px;
-  right: -7px;
+  right: -1px;
   background-color: #f34f3f;
   color: white;
-  padding: 5px;
+  padding: 6px 1px 6px 2px;
   border-radius: 5px;
   font-weight: bold;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navIcon .inputSearch {
+  display: none;
+  z-index: 666;
+  position: absolute;
+  top: 160%;
+  left: -145%;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navIcon .inputSearch input {
+  font-size: 12px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 0px;
+  outline: none;
+  color: #b5b5b5;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navIcon .inputSearch .inputIcon {
+  position: absolute;
+  z-index: 666;
+  top: 38%;
+  left: 88%;
+  font-size: 15px;
+  color: #b5b5b5;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.navHeader .headContainer .navbar-nav .nav-item .navIcon .inputSearch .inputIcon:hover {
+  color: black;
 }
 
 .navHeader .headContainer .navbar-nav .nav-item .navList {
@@ -591,6 +678,67 @@
 
 .navHeader .headContainer .navbar-nav .nav-item .navList:hover {
   color: black;
+}
+
+#slider .slider img {
+  width: 100%;
+  -webkit-animation: cssAnimation 9s ease-in-out forwards;
+          animation: cssAnimation 9s ease-in-out forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#slider .slider i[class*="fa-long"] {
+  top: 45%;
+}
+
+#slider .slider i[class*="right"] {
+  right: 15px;
+}
+
+#slider .slider i[class*="left"] {
+  left: 15px;
+}
+
+#slider .sliderText {
+  position: absolute;
+  left: 13%;
+  top: 25vh;
+  z-index: 10;
+}
+
+#slider .sliderText p {
+  min-width: 400px;
+}
+
+@-webkit-keyframes cssAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes cssAnimation {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .categories {
@@ -644,10 +792,29 @@
   font-size: 12px;
   letter-spacing: 1px;
   margin: 70px 0 0;
+}
+
+.filter .filterHover:hover .filter-content {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.filter .filterHover .filter-text {
+  padding-top: 5px;
+  margin-bottom: 15px;
+}
+
+.filter .filterHover .filter-text:hover {
   cursor: pointer;
 }
 
-.filter .filter-content {
+.filter .filterHover .filter-text .fa-sort-down {
+  font-size: 17px;
+  margin-left: 6px;
+}
+
+.filter .filterHover .filter-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,29 +826,25 @@
   width: 410px;
 }
 
-.filter .filter-content .filter-text {
-  margin-right: 15px;
+.filter .filterHover .filter-content .sort-by {
+  padding: 10px 20px 10px 30px;
 }
 
-.filter .filter-content .sort-by {
-  padding-left: 40px;
-}
-
-.filter .filter-content .sort-by h5 {
+.filter .filterHover .filter-content .sort-by h5 {
   font-size: 25px;
   line-height: 2;
   font-family: "playfair display,serif";
 }
 
-.filter .filter-content .sort-by ul {
+.filter .filterHover .filter-content .sort-by ul {
   list-style: none;
 }
 
-.filter .filter-content .sort-by ul li {
+.filter .filterHover .filter-content .sort-by ul li {
   line-height: 2;
 }
 
-.filter .filter-content .sort-by ul li a {
+.filter .filterHover .filter-content .sort-by ul li a {
   text-decoration: none;
   font-size: 13px;
   color: #737373;
@@ -689,29 +852,29 @@
   transition: 0.5s;
 }
 
-.filter .filter-content .sort-by ul li a:hover {
+.filter .filterHover .filter-content .sort-by ul li a:hover {
   color: black;
 }
 
-.filter .filter-content .price-range {
-  padding: 0px 40px 25px 40px;
+.filter .filterHover .filter-content .price-range {
+  padding: 10px 20px 10px 30px;
 }
 
-.filter .filter-content .price-range h5 {
+.filter .filterHover .filter-content .price-range h5 {
   font-size: 25px;
   line-height: 2;
   font-family: "playfair display,serif";
 }
 
-.filter .filter-content .price-range ul {
+.filter .filterHover .filter-content .price-range ul {
   list-style: none;
 }
 
-.filter .filter-content .price-range ul li {
+.filter .filterHover .filter-content .price-range ul li {
   line-height: 2;
 }
 
-.filter .filter-content .price-range ul li a {
+.filter .filterHover .filter-content .price-range ul li a {
   text-decoration: none;
   font-size: 13px;
   color: #737373;
@@ -719,14 +882,8 @@
   transition: 0.5s;
 }
 
-.filter .filter-content .price-range ul li a:hover {
+.filter .filterHover .filter-content .price-range ul li a:hover {
   color: black;
-}
-
-.filter:hover .filter-content {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
 }
 
 .filterCard {
@@ -1222,8 +1379,10 @@
   position: relative;
   width: 225px;
   height: 250px;
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

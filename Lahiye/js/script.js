@@ -16,11 +16,23 @@ $(document).ready(function () {
             }
         }]
     });
+    // $(".secondHover").on({
+    //     mouseenter: function () {
+    //       $(this).parent().css({
+    //         overflow: "visible",
+    //       });
+    //     },
+    //     mouseleave: function () {
+    //       $(this).parent().css({
+    //         overflow: "hidden",
+    //       });
+    //     },
+    //   });
     $(window).scroll(function () {
         //if you hard code, then use console
         //.log to determine when you want the 
         //nav bar to stick.  
-        console.log($(window).scrollTop())
+        // console.log($(window).scrollTop())
         if ($(window).scrollTop() > 285) {
             $('.secondNavBar').addClass('navbar-fixed');
         }
@@ -28,6 +40,54 @@ $(document).ready(function () {
             $('.secondNavBar').removeClass('navbar-fixed');
         }
     });
+
+    $(document).on("click", ".nav-item .navIcon .fa-search", function () {
+        $(".inputSearch").slideToggle();
+    })
+
+    $(".slider").slick({
+        infinite: true,
+        speed: 2000,
+        fade: true,
+        cssEase: "linear",
+        autoplay: true,
+        autoplaySpeed: 4500,
+        prevArrow: '<i class="fal fa-long-arrow-left"></i>',
+        nextArrow: '<i class="fal fa-long-arrow-right"></i>',
+        responsive: [
+            {
+                breakpoint: 1040,
+                settings: {
+                    infinite: true,
+                    dots: true,
+                    arrows: false,
+                },
+            },
+        ],
+    });
+
+    $(document).on("click", ".categoriesList ul li a", function () {
+        let select = $(this).attr("data-id");
+        $(".categoriesList ul li a").removeClass("activeLi");
+        $(this).addClass("activeLi");
+        // console.log($(this).parents(".categories").find(".filterCard").each());
+        if (select !== "all") {
+            $(this).parents(".categories").find(".filterCard").each(function () {
+                $(this).attr("data-id");
+                if (select === $(this).attr("data-id")) {
+                    $(this).fadeOut(0);
+                    $(this).fadeIn();
+                }
+                else {
+                    $(this).fadeOut(0);
+                }
+            });
+        }
+        else {
+            $(this).parents(".categories").find(".filterCard").fadeIn();
+        }
+    })
+
     // window.scrollTo({
     //     top: 0,
     //     behavior: "smooth"
